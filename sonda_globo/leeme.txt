@@ -1,7 +1,0 @@
-datos de versión:
--envía datos en ascii
--32bytes por registro
--variables almacenadas en flotante
--envio de datos permanente cada segundo (sólo instantaneos)
--baja resolución para T&HR
--tiempo de muestreo optimizado (240ms aprox.)
