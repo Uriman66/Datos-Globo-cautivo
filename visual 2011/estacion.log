@@ -1,0 +1,45 @@
+Línea 358: la clase ButtonEstiloMac.ButtonMac del control botonCancelCon no era una clase de control cargada.
+Línea 379: la clase ButtonEstiloMac.ButtonMac del control BotonConfigura2 no era una clase de control cargada.
+Línea 466: la clase ButtonEstiloMac.ButtonMac del control boton_guardar no era una clase de control cargada.
+Línea 545: la clase ButtonEstiloMac.ButtonMac del control boton_recepcion no era una clase de control cargada.
+Línea 566: la clase ButtonEstiloMac.ButtonMac del control botonObtener no era una clase de control cargada.
+Línea 587: la clase ButtonEstiloMac.ButtonMac del control botonConfigura no era una clase de control cargada.
+Línea 662: la clase SkinFormYahoo.SkinYahoo del control SkinYahoo1 no era una clase de control cargada.
+Línea 729: la clase ButtonEstiloMac.ButtonMac del control Boton_Enviar no era una clase de control cargada.
+Línea 364: el nombre de la propiedad _ExtentX de botonCancelCon no es válido.
+Línea 365: el nombre de la propiedad _ExtentY de botonCancelCon no es válido.
+Línea 367: el nombre de la propiedad Caption de botonCancelCon no es válido.
+Línea 377: el nombre de la propiedad PicOpacity de botonCancelCon no es válido.
+Línea 385: el nombre de la propiedad _ExtentX de BotonConfigura2 no es válido.
+Línea 386: el nombre de la propiedad _ExtentY de BotonConfigura2 no es válido.
+Línea 388: el nombre de la propiedad Caption de BotonConfigura2 no es válido.
+Línea 398: el nombre de la propiedad PicOpacity de BotonConfigura2 no es válido.
+Línea 472: el nombre de la propiedad _ExtentX de boton_guardar no es válido.
+Línea 473: el nombre de la propiedad _ExtentY de boton_guardar no es válido.
+Línea 475: el nombre de la propiedad Caption de boton_guardar no es válido.
+Línea 485: el nombre de la propiedad PicOpacity de boton_guardar no es válido.
+Línea 551: el nombre de la propiedad _ExtentX de boton_recepcion no es válido.
+Línea 552: el nombre de la propiedad _ExtentY de boton_recepcion no es válido.
+Línea 554: el nombre de la propiedad Caption de boton_recepcion no es válido.
+Línea 564: el nombre de la propiedad PicOpacity de boton_recepcion no es válido.
+Línea 572: el nombre de la propiedad _ExtentX de botonObtener no es válido.
+Línea 573: el nombre de la propiedad _ExtentY de botonObtener no es válido.
+Línea 575: el nombre de la propiedad Caption de botonObtener no es válido.
+Línea 585: el nombre de la propiedad PicOpacity de botonObtener no es válido.
+Línea 593: el nombre de la propiedad _ExtentX de botonConfigura no es válido.
+Línea 594: el nombre de la propiedad _ExtentY de botonConfigura no es válido.
+Línea 596: el nombre de la propiedad Caption de botonConfigura no es válido.
+Línea 606: el nombre de la propiedad PicOpacity de botonConfigura no es válido.
+Línea 668: el nombre de la propiedad _ExtentX de SkinYahoo1 no es válido.
+Línea 669: el nombre de la propiedad _ExtentY de SkinYahoo1 no es válido.
+Línea 670: el nombre de la propiedad ColorTitulo de SkinYahoo1 no es válido.
+Línea 671: el nombre de la propiedad ColorBordes de SkinYahoo1 no es válido.
+Línea 672: el nombre de la propiedad ColorMenu de SkinYahoo1 no es válido.
+Línea 673: el nombre de la propiedad ColorComandos de SkinYahoo1 no es válido.
+Línea 674: el nombre de la propiedad ColorCaption de SkinYahoo1 no es válido.
+Línea 675: el nombre de la propiedad MinimoHeight de SkinYahoo1 no es válido.
+Línea 676: el nombre de la propiedad MinimoWidth de SkinYahoo1 no es válido.
+Línea 735: el nombre de la propiedad _ExtentX de Boton_Enviar no es válido.
+Línea 736: el nombre de la propiedad _ExtentY de Boton_Enviar no es válido.
+Línea 738: el nombre de la propiedad Caption de Boton_Enviar no es válido.
+Línea 748: el nombre de la propiedad PicOpacity de Boton_Enviar no es válido.
