@@ -1,0 +1,54 @@
+[Directories]
+Include=C:\Program Files\PICC\devices\;C:\Program Files\PICC\drivers\;
+Library=
+LinkerScript=
+[defines]
+enabled=0
+D1=
+V1=
+[fileformats]
+forcecoff=0
+debug=4
+error=2
+object=0
+list=0
+scratch=0
+sta=1
+tre=1
+allerrors=1
+allwarnings=1
+stayupne=3
+stayupoe=0
+[PROJECT]
+Target=receptor.hex
+Development_Mode=
+Processor=0x876F
+Processor_Text=PIC16F876
+ToolSuite=CCS
+[Target Data]
+BuildTool=C-COMPILER
+OptionString=+FM
+AdditionalOptionString=
+BuildRequired=1
+FileList=D:\Miguel Angel\pic\estacion\estacion_globo\receptor\receptor.c
+[receptor.c]
+Type=4
+Path=
+FileList=
+BuildTool=
+OptionString=
+AdditionalOptionString=
+[mru-list]
+1=D:\Miguel Angel\pic\estacion\estacion_globo\receptor\receptor.c
+[Windows]
+0=0000 %S 0 0 796 451 3 0
+[Opened Files]
+1=D:\Miguel Angel\pic\estacion\estacion_globo\receptor\receptor.c
+2=D:\Miguel Angel\pic\estacion\estacion_globo\receptor\RecSonda.c
+3=C:\Program Files\PICC\devices\16F876.h
+4=D:\Miguel Angel\RecSonda\RecSonda.c
+5=
+[Units]
+Count=1
+1=receptor.c (main)
+Link=0
