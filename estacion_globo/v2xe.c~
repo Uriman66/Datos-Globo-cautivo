@@ -1,0 +1,267 @@
+//#include <18F248.h>
+//#fuses HS,NOBROWNOUT,NOWDT,NOPUT,NOPROTECT,NOLVP
+//#use delay(clock=10000000)
+////#include <lcd.c>
+//#define habilitador pin_c2//se descomenta si se quiere utilizar el pin de habilitacion
+
+#include <math.h>
+#ifndef pin_sync
+	#define pin_sync   pin_c1
+#endif
+#ifndef pin_calibracion
+	#define pin_calibracion	pin_c0
+#endif
+
+#define xrawve 0x01
+#define yrawve 0x02
+#define xcalve 0x03
+#define ycalve 0x04
+#define headingve 0x05
+#define magnitudv 0x06
+#define temp_v2xe 0x07
+#define distortion 0x08
+#define calstatus 0x09
+
+//variables v2xe
+float x_calibrado,y_calibrado,magnitud;
+//byte tempo1_v2xe,tempo2_v2xe,tempo3_v2xe,tempo4_v2xe;
+float xoffset,yoffset,xgain,ygain;
+signed int32 rawxv,rawyv;
+//float phi,cal_magn;
+int1 signox,signoy;
+byte dato_v2xe;
+byte en_ieee[4];
+float direccion;
+
+
+//funcion ieee_en_mic()
+//convierte en flotante de formato ieee en formato de microchip
+//es necesario declarar la matriz: byte en_ieee[4] como global 
+//se colocan los datos en dicha matriz antes de llamar la función
+//el byte mas significativo se coloca en la posicion 0
+float ieee_en_mic()
+{
+
+int1 temp;
+int32 flo;
+float *pf;
+   temp = shift_left(&en_ieee[1], 1, 0);
+   temp = shift_left(&en_ieee[0], 1, temp);
+   shift_right(&en_ieee[1], 1, temp);
+   
+   pf=&flo;
+   flo=make32(en_ieee[3],en_ieee[2],en_ieee[1],en_ieee[0]);
+
+   return(*pf);
+
+}
+float mic_en_ieee(float num_flotante)
+{
+int1 acarreo;
+
+acarreo=shift_left(&num_flotante+1,1,0);
+acarreo=shift_right(&num_flotante,1,acarreo);
+shift_right(&num_flotante+1,1,acarreo);
+return(num_flotante);
+}
+
+void calcula_dir_v2xe(void)
+{
+y_calibrado=(rawyv+yoffset)*ygain;
+x_calibrado=(rawxv+xoffset)*xgain;
+if(y_calibrado<0)
+        signoy=1;
+else
+        signoy=0;
+
+if(x_calibrado<0)
+        signox=1;
+else
+        signox=0;
+direccion=abs(atan(y_calibrado/x_calibrado));
+direccion=57.2958*direccion;
+if(signox==1&&signoy==1)
+        direccion=180-direccion;
+if(signox==1&&signoy==0)
+        direccion=180+direccion;
+if(signox==0&&signoy==0)
+        direccion=360-direccion;
+
+}
+
+void calStart(){
+    //setconfig
+    spi_read(0xaa);
+    spi_read(0x06);
+    spi_read(0x05);
+    spi_read(0x04);
+    spi_read(0x00);
+    //starcal
+    spi_read(0xaa);
+    spi_read(0x0a);
+    spi_read(0x00);
+}
+void calEnd(){
+    //stopcal
+    spi_read(0xaa);
+    spi_read(0x0b);
+    spi_read(0x00);
+    //saveconfig
+    spi_read(0xaa);
+    spi_read(0x09);
+    spi_read(0x00);
+}
+
+void calibracion()
+{
+int temp;
+char caracter_x;
+	temp=spi_read(0xaa);
+	temp=spi_read(0x06);//setconfig
+	temp=spi_read(0x05);
+	temp=spi_read(0x04);
+	temp=spi_read(0x00);
+
+        do
+        {
+        caracter_x=getc();
+        }while(caracter_x!='F');
+        delay_ms(100);
+        output_low(indicador);
+	temp=spi_read(0xaa);//envio comando starcal
+	temp=spi_read(0x0a);
+	temp=spi_read(0x00);
+
+        do
+        {
+        caracter_x=getc();
+        }while(caracter_x!='G');
+
+	temp=spi_read(0xaa);//envio comando stop cal
+	temp=spi_read(0x0b);
+	temp=spi_read(0x00);
+
+	temp=spi_read(0xaa);//envio comando saveconfig
+	temp=spi_read(0x09);
+	temp=spi_read(0x00);
+
+}//fin calibracion
+
+//**********************************************//
+//**Configuracion de los datos q envia la v2xe**//
+//**cada q se requieran datos                 **//
+//**********************************************//
+void configura_v2xe(void)
+{
+//byte de sincronizacion
+spi_write(0xaa);
+//comando
+spi_write(0x03);
+//numero de datos
+spi_write(0x3);
+//spi_write(headingve);
+spi_write(xcalve);
+spi_write(ycalve);
+spi_write(magnitudv);
+//caracter de fin
+spi_write(0x00); 
+//guarda conf.
+spi_write(0xaa);
+spi_write(0x09);
+spi_write(0x00);
+}
+
+void lee_datos_v2xe(void)
+{
+    //pide datos
+    dato_v2xe=spi_read(0xaa);
+    dato_v2xe=spi_read(0x04);
+    dato_v2xe=spi_read(0x00);
+    //Espera q la v2xe envie datos
+    while (dato_v2xe!=0xaa)
+        dato_v2xe=spi_read(0x00);
+    //id de comando
+    dato_v2xe= spi_read(0);
+    //lee numero de datos
+    dato_v2xe= spi_read(0);
+//     //lee id de dato
+//     dato_v2xe= spi_read(0);
+//     //lee dato
+//     en_ieee[0]=spi_read(0x00);
+//     en_ieee[1]=spi_read(0x00);
+//     en_ieee[2]=spi_read(0x00);
+//     en_ieee[3]=spi_read(0x00);
+//     //convierte de formato ieee a formato de microchip
+//     direccion=ieee_en_mic();
+    //lee id de dato
+    dato_v2xe= spi_read(0);
+    //lee dato
+    en_ieee[0]=spi_read(0x00);
+    en_ieee[1]=spi_read(0x00);
+    en_ieee[2]=spi_read(0x00);
+    en_ieee[3]=spi_read(0x00);
+    x_calibrado=ieee_en_mic();
+    //lee id de dato
+    dato_v2xe= spi_read(0);
+    //lee dato
+    en_ieee[0]=spi_read(0x00);
+    en_ieee[1]=spi_read(0x00);
+    en_ieee[2]=spi_read(0x00);
+    en_ieee[3]=spi_read(0x00);
+    y_calibrado=ieee_en_mic();
+    //ID de dato
+    dato_v2xe=spi_read(0);
+    //lee dato
+    en_ieee[0]=spi_read(0x00);
+    en_ieee[1]=spi_read(0x00);
+    en_ieee[2]=spi_read(0x00);
+    en_ieee[3]=spi_read(0x00);
+    magnitud=ieee_en_mic();
+    //lee caracter de fin
+    dato_v2xe= spi_read(0);
+}
+//
+////*********************************//
+////*****Lectura de sensor v2xe *****//
+////*********************************//
+//   output_low(habilitador);
+//   delay_us(10);
+//   setup_spi(spi_master|SPI_L_TO_H|SPI_CLK_DIV_64|SPI_XMIT_L_TO_H);//configura spi
+//   dato_v2xe=spi_read(0xaa);
+//   dato_v2xe=spi_read(0x04);//pide datos
+//   dato_v2xe=spi_read(0x00);
+//   //delay_ms(50);
+//   while (dato_v2xe!=0xaa)//Espera q la v2xe envie datos
+//      dato_v2xe=spi_read(0x00);
+//
+//   dato_v2xe= spi_read(0);//lee id de comando
+//   dato_v2xe= spi_read(0);//lee n comp
+//   
+//   dato_v2xe= spi_read(0);//lee id de dato1
+//   en_ieee[0]=spi_read(0x00);//lee dato1
+//   en_ieee[1]=spi_read(0x00);
+//   en_ieee[2]=spi_read(0x00);
+//   en_ieee[3]=spi_read(0x00);
+//   x_calibrado=ieee_en_mic();//convierte de formato ieee a formato de microcip
+//   dato_v2xe= spi_read(0);//lee id de dato 2
+//   en_ieee[0]=spi_read(0x00);//lee dato2
+//   en_ieee[1]=spi_read(0x00);
+//   en_ieee[2]=spi_read(0x00);
+//   en_ieee[3]=spi_read(0x00);
+//   y_calibrado=ieee_en_mic();//convierte de formato ieee a formato de microchip
+//
+//
+//   dato_v2xe= spi_read(0);//lee id de dato3
+//   en_ieee[0]=spi_read(0x00);//lee dato3
+//   en_ieee[1]=spi_read(0x00);
+//   en_ieee[2]=spi_read(0x00);
+//   en_ieee[3]=spi_read(0x00);
+//   direccion=ieee_en_mic();//convierte de formato ieee a formato de microcip
+//   dato_v2xe= spi_read(0);//lee id de dato 4
+//   en_ieee[0]=spi_read(0x00);//lee dato4
+//   en_ieee[1]=spi_read(0x00);
+//   en_ieee[2]=spi_read(0x00);
+//   en_ieee[3]=spi_read(0x00);
+//   magnitud=ieee_en_mic();//convierte de formato ieee a formato de microchip
+// 
+//   dato_v2xe= spi_read(0);//lee caracter de fin
