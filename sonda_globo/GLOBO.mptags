@@ -1,0 +1,619 @@
+!_TAG_FILE_FORMAT	2	/extended format; --format=1 will not append ;" to lines/
+!_TAG_FILE_SORTED	1	/0=unsorted, 1=sorted, 2=foldcase/
+!_TAG_PROGRAM_AUTHOR	Darren Hiebert	/dhiebert@users.sourceforge.net/
+!_TAG_PROGRAM_NAME	Exuberant Ctags	//
+!_TAG_PROGRAM_URL	http://ctags.sourceforge.net	/official site/
+!_TAG_PROGRAM_VERSION	5.5.4	//
+!_TAG_REVISION_NAME	MCHPTags	//
+!_TAG_REVISION_VERSION	6.0.1	//
+A0_A3_A1_A2::0xfff02	C:\ARCHIV~1\PICC\devices\18F2520.h	213;"	d	line:213
+A0_A3_A1_A2_OUT_ON_A4_A5::0xfcf03	C:\ARCHIV~1\PICC\devices\18F2520.h	210;"	d	line:210
+A0_A3_A1_A3::0xfff04	C:\ARCHIV~1\PICC\devices\18F2520.h	209;"	d	line:209
+A0_A3_A1_A3_OUT_ON_A4_A5::0xbcf05	C:\ARCHIV~1\PICC\devices\18F2520.h	211;"	d	line:211
+A0_A3_NC_NC_OUT_ON_A4::0x9ef01	C:\ARCHIV~1\PICC\devices\18F2520.h	214;"	d	line:214
+A0_VR_A1_VR::0x3ff06	C:\ARCHIV~1\PICC\devices\18F2520.h	215;"	d	line:215
+A3_VR_A2_VR::0xcff0e	C:\ARCHIV~1\PICC\devices\18F2520.h	216;"	d	line:216
+ADC_CLOCK_DIV_16::0x05	C:\ARCHIV~1\PICC\devices\18F2520.h	290;"	d	line:290
+ADC_CLOCK_DIV_2::0x100	C:\ARCHIV~1\PICC\devices\18F2520.h	287;"	d	line:287
+ADC_CLOCK_DIV_32::0x02	C:\ARCHIV~1\PICC\devices\18F2520.h	291;"	d	line:291
+ADC_CLOCK_DIV_4::0x04	C:\ARCHIV~1\PICC\devices\18F2520.h	288;"	d	line:288
+ADC_CLOCK_DIV_64::0x06	C:\ARCHIV~1\PICC\devices\18F2520.h	292;"	d	line:292
+ADC_CLOCK_DIV_8::0x01	C:\ARCHIV~1\PICC\devices\18F2520.h	289;"	d	line:289
+ADC_CLOCK_INTERNAL::0x07	C:\ARCHIV~1\PICC\devices\18F2520.h	293;"	d	line:293
+ADC_OFF::0	C:\ARCHIV~1\PICC\devices\18F2520.h	286;"	d	line:286
+ADC_READ_ONLY::6	C:\ARCHIV~1\PICC\devices\18F2520.h	336;"	d	line:336
+ADC_START_AND_READ::7	C:\ARCHIV~1\PICC\devices\18F2520.h	334;"	d	line:334
+ADC_START_ONLY::1	C:\ARCHIV~1\PICC\devices\18F2520.h	335;"	d	line:335
+ADC_TAD_MUL_0::0x00	C:\ARCHIV~1\PICC\devices\18F2520.h	295;"	d	line:295
+ADC_TAD_MUL_12::0x28	C:\ARCHIV~1\PICC\devices\18F2520.h	300;"	d	line:300
+ADC_TAD_MUL_16::0x30	C:\ARCHIV~1\PICC\devices\18F2520.h	301;"	d	line:301
+ADC_TAD_MUL_20::0x38	C:\ARCHIV~1\PICC\devices\18F2520.h	302;"	d	line:302
+ADC_TAD_MUL_2::0x08	C:\ARCHIV~1\PICC\devices\18F2520.h	296;"	d	line:296
+ADC_TAD_MUL_4::0x10	C:\ARCHIV~1\PICC\devices\18F2520.h	297;"	d	line:297
+ADC_TAD_MUL_6::0x18	C:\ARCHIV~1\PICC\devices\18F2520.h	298;"	d	line:298
+ADC_TAD_MUL_8::0x20	C:\ARCHIV~1\PICC\devices\18F2520.h	299;"	d	line:299
+ALL_ANALOG::0x00	C:\ARCHIV~1\PICC\devices\18F2520.h	306;"	d	line:306
+AN0::0x0E	C:\ARCHIV~1\PICC\devices\18F2520.h	315;"	d	line:315
+AN0_ANALOG::0x0E	C:\ARCHIV~1\PICC\devices\18F2520.h	324;"	d	line:324
+AN0_TO_AN10::0x04	C:\ARCHIV~1\PICC\devices\18F2520.h	308;"	d	line:308
+AN0_TO_AN10_ANALOG::0x04	C:\ARCHIV~1\PICC\devices\18F2520.h	317;"	d	line:317
+AN0_TO_AN11::0x03	C:\ARCHIV~1\PICC\devices\18F2520.h	307;"	d	line:307
+AN0_TO_AN11_ANALOG::0x03	C:\ARCHIV~1\PICC\devices\18F2520.h	316;"	d	line:316
+AN0_TO_AN1::0x0D	C:\ARCHIV~1\PICC\devices\18F2520.h	314;"	d	line:314
+AN0_TO_AN1_ANALOG::0x0D	C:\ARCHIV~1\PICC\devices\18F2520.h	323;"	d	line:323
+AN0_TO_AN2::0x0C	C:\ARCHIV~1\PICC\devices\18F2520.h	313;"	d	line:313
+AN0_TO_AN2_ANALOG::0x0C	C:\ARCHIV~1\PICC\devices\18F2520.h	322;"	d	line:322
+AN0_TO_AN3::0x0B	C:\ARCHIV~1\PICC\devices\18F2520.h	312;"	d	line:312
+AN0_TO_AN3_ANALOG::0x0B	C:\ARCHIV~1\PICC\devices\18F2520.h	321;"	d	line:321
+AN0_TO_AN4::0x0A	C:\ARCHIV~1\PICC\devices\18F2520.h	311;"	d	line:311
+AN0_TO_AN4_ANALOG::0x0A	C:\ARCHIV~1\PICC\devices\18F2520.h	320;"	d	line:320
+AN0_TO_AN8::0x06	C:\ARCHIV~1\PICC\devices\18F2520.h	310;"	d	line:310
+AN0_TO_AN8_ANALOG::0x06	C:\ARCHIV~1\PICC\devices\18F2520.h	319;"	d	line:319
+AN0_TO_AN9::0x05	C:\ARCHIV~1\PICC\devices\18F2520.h	309;"	d	line:309
+AN0_TO_AN9_ANALOG::0x05	C:\ARCHIV~1\PICC\devices\18F2520.h	318;"	d	line:318
+ASIN_COS	C:\ARCHIV~1\PICC\drivers\math.h	446;"	f	line:446	signature:(float x, int n)
+BOOLEAN::shortint	C:\ARCHIV~1\PICC\devices\18F2520.h	59;"	d	line:59
+BROWNOUT_RESTART::14	C:\ARCHIV~1\PICC\devices\18F2520.h	77;"	d	line:77
+BYTE::int	C:\ARCHIV~1\PICC\devices\18F2520.h	58;"	d	line:58
+CCP_1	C:\ARCHIV~1\PICC\devices\18F2520.h	172;"	v	line:172
+CCP_2	C:\ARCHIV~1\PICC\devices\18F2520.h	176;"	v	line:176
+CCP_CAPTURE_DIV_16::7	C:\ARCHIV~1\PICC\devices\18F2520.h	161;"	d	line:161
+CCP_CAPTURE_DIV_4::6	C:\ARCHIV~1\PICC\devices\18F2520.h	160;"	d	line:160
+CCP_CAPTURE_FE::4	C:\ARCHIV~1\PICC\devices\18F2520.h	158;"	d	line:158
+CCP_CAPTURE_RE::5	C:\ARCHIV~1\PICC\devices\18F2520.h	159;"	d	line:159
+CCP_COMPARE_CLR_ON_MATCH::9	C:\ARCHIV~1\PICC\devices\18F2520.h	163;"	d	line:163
+CCP_COMPARE_INT::0xA	C:\ARCHIV~1\PICC\devices\18F2520.h	164;"	d	line:164
+CCP_COMPARE_INT_AND_TOGGLE::0x2	C:\ARCHIV~1\PICC\devices\18F2520.h	165;"	d	line:165
+CCP_COMPARE_RESET_TIMER::0xB	C:\ARCHIV~1\PICC\devices\18F2520.h	166;"	d	line:166
+CCP_COMPARE_SET_ON_MATCH::8	C:\ARCHIV~1\PICC\devices\18F2520.h	162;"	d	line:162
+CCP_OFF::0	C:\ARCHIV~1\PICC\devices\18F2520.h	157;"	d	line:157
+CCP_PWM::0xC	C:\ARCHIV~1\PICC\devices\18F2520.h	167;"	d	line:167
+CCP_PWM_PLUS_1::0x1c	C:\ARCHIV~1\PICC\devices\18F2520.h	168;"	d	line:168
+CCP_PWM_PLUS_2::0x2c	C:\ARCHIV~1\PICC\devices\18F2520.h	169;"	d	line:169
+CCP_PWM_PLUS_3::0x3c	C:\ARCHIV~1\PICC\devices\18F2520.h	170;"	d	line:170
+CCP_USE_TIMER3::0x100	C:\ARCHIV~1\PICC\devices\18F2520.h	171;"	d	line:171
+CEIL_FLOOR	C:\ARCHIV~1\PICC\drivers\math.h	34;"	f	line:34	signature:(float x, int n)
+FALSE::0	C:\ARCHIV~1\PICC\devices\18F2520.h	55;"	d	line:55
+GLOBAL::0xF2C0	C:\ARCHIV~1\PICC\devices\18F2520.h	348;"	d	line:348
+H_TO_L::0	C:\ARCHIV~1\PICC\devices\18F2520.h	346;"	d	line:346
+INT_AD::0x9D40	C:\ARCHIV~1\PICC\devices\18F2520.h	358;"	d	line:358
+INT_BUSCOL::0xA008	C:\ARCHIV~1\PICC\devices\18F2520.h	364;"	d	line:364
+INT_CCP1::0x9D04	C:\ARCHIV~1\PICC\devices\18F2520.h	362;"	d	line:362
+INT_CCP2::0xA001	C:\ARCHIV~1\PICC\devices\18F2520.h	363;"	d	line:363
+INT_COMP::0xA040	C:\ARCHIV~1\PICC\devices\18F2520.h	366;"	d	line:366
+INT_EEPROM::0xA010	C:\ARCHIV~1\PICC\devices\18F2520.h	367;"	d	line:367
+INT_EXT1::0xF008	C:\ARCHIV~1\PICC\devices\18F2520.h	355;"	d	line:355
+INT_EXT2::0xF010	C:\ARCHIV~1\PICC\devices\18F2520.h	356;"	d	line:356
+INT_EXT::0xF210	C:\ARCHIV~1\PICC\devices\18F2520.h	354;"	d	line:354
+INT_LOWVOLT::0xA004	C:\ARCHIV~1\PICC\devices\18F2520.h	365;"	d	line:365
+INT_OSCF::0xA080	C:\ARCHIV~1\PICC\devices\18F2520.h	368;"	d	line:368
+INT_RB::0xFFF208	C:\ARCHIV~1\PICC\devices\18F2520.h	357;"	d	line:357
+INT_RDA::0x9D20	C:\ARCHIV~1\PICC\devices\18F2520.h	359;"	d	line:359
+INT_RTCC::0xF220	C:\ARCHIV~1\PICC\devices\18F2520.h	349;"	d	line:349
+INT_SSP::0x9D08	C:\ARCHIV~1\PICC\devices\18F2520.h	361;"	d	line:361
+INT_TBE::0x9D10	C:\ARCHIV~1\PICC\devices\18F2520.h	360;"	d	line:360
+INT_TIMER0::0xF220	C:\ARCHIV~1\PICC\devices\18F2520.h	350;"	d	line:350
+INT_TIMER1::0x9D01	C:\ARCHIV~1\PICC\devices\18F2520.h	351;"	d	line:351
+INT_TIMER2::0x9D02	C:\ARCHIV~1\PICC\devices\18F2520.h	352;"	d	line:352
+INT_TIMER3::0xA002	C:\ARCHIV~1\PICC\devices\18F2520.h	353;"	d	line:353
+LN10::2.30258509	C:\ARCHIV~1\PICC\drivers\math.h	257;"	d	line:257
+LN2::0.6931471806	C:\ARCHIV~1\PICC\drivers\math.h	143;"	d	line:143
+LOG2::.30102999566398119521	C:\ARCHIV~1\PICC\drivers\math.h	704;"	d	line:704
+LVD_19::0x11	C:\ARCHIV~1\PICC\devices\18F2520.h	247;"	d	line:247
+LVD_21::0x12	C:\ARCHIV~1\PICC\devices\18F2520.h	246;"	d	line:246
+LVD_23::0x13	C:\ARCHIV~1\PICC\devices\18F2520.h	245;"	d	line:245
+LVD_25::0x14	C:\ARCHIV~1\PICC\devices\18F2520.h	244;"	d	line:244
+LVD_27::0x15	C:\ARCHIV~1\PICC\devices\18F2520.h	243;"	d	line:243
+LVD_28::0x16	C:\ARCHIV~1\PICC\devices\18F2520.h	242;"	d	line:242
+LVD_30::0x17	C:\ARCHIV~1\PICC\devices\18F2520.h	241;"	d	line:241
+LVD_33::0x18	C:\ARCHIV~1\PICC\devices\18F2520.h	240;"	d	line:240
+LVD_35::0x19	C:\ARCHIV~1\PICC\devices\18F2520.h	239;"	d	line:239
+LVD_36::0x1A	C:\ARCHIV~1\PICC\devices\18F2520.h	238;"	d	line:238
+LVD_38::0x1B	C:\ARCHIV~1\PICC\devices\18F2520.h	237;"	d	line:237
+LVD_40::0x1C	C:\ARCHIV~1\PICC\devices\18F2520.h	236;"	d	line:236
+LVD_42::0x1D	C:\ARCHIV~1\PICC\devices\18F2520.h	235;"	d	line:235
+LVD_45::0x1E	C:\ARCHIV~1\PICC\devices\18F2520.h	234;"	d	line:234
+LVD_LVDIN::0x1F	C:\ARCHIV~1\PICC\devices\18F2520.h	233;"	d	line:233
+LVD_TRIGGER_ABOVE::0x80	C:\ARCHIV~1\PICC\devices\18F2520.h	250;"	d	line:250
+LVD_TRIGGER_BELOW::0	C:\ARCHIV~1\PICC\devices\18F2520.h	249;"	d	line:249
+L_TO_H::0x40	C:\ARCHIV~1\PICC\devices\18F2520.h	345;"	d	line:345
+MATH_H	C:\ARCHIV~1\PICC\drivers\math.h	19;"	d	line:19
+MCLR_FROM_RUN::15	C:\ARCHIV~1\PICC\devices\18F2520.h	75;"	d	line:75
+MCLR_FROM_SLEEP::11	C:\ARCHIV~1\PICC\devices\18F2520.h	74;"	d	line:74
+NC_NC_NC_NC::0x0ff07	C:\ARCHIV~1\PICC\devices\18F2520.h	212;"	d	line:212
+NORMAL_POWER_UP::12	C:\ARCHIV~1\PICC\devices\18F2520.h	76;"	d	line:76
+NO_ANALOGS::0x0F	C:\ARCHIV~1\PICC\devices\18F2520.h	305;"	d	line:305
+NULL::0	C:\ARCHIV~1\PICC\drivers\stddef.h	23;"	d	line:23
+OSC_125KHZ::0x10	C:\ARCHIV~1\PICC\devices\18F2520.h	257;"	d	line:257
+OSC_16MHZ::0x4060	C:\ARCHIV~1\PICC\devices\18F2520.h	264;"	d	line:264
+OSC_1MHZ::0x40	C:\ARCHIV~1\PICC\devices\18F2520.h	260;"	d	line:260
+OSC_250KHZ::0x20	C:\ARCHIV~1\PICC\devices\18F2520.h	258;"	d	line:258
+OSC_2MHZ::0x50	C:\ARCHIV~1\PICC\devices\18F2520.h	261;"	d	line:261
+OSC_31250::0x8000	C:\ARCHIV~1\PICC\devices\18F2520.h	272;"	d	line:272
+OSC_31KHZ::0	C:\ARCHIV~1\PICC\devices\18F2520.h	256;"	d	line:256
+OSC_32MHZ::0x4070	C:\ARCHIV~1\PICC\devices\18F2520.h	265;"	d	line:265
+OSC_4MHZ::0x60	C:\ARCHIV~1\PICC\devices\18F2520.h	262;"	d	line:262
+OSC_500KHZ::0x30	C:\ARCHIV~1\PICC\devices\18F2520.h	259;"	d	line:259
+OSC_8MHZ::0x70	C:\ARCHIV~1\PICC\devices\18F2520.h	263;"	d	line:263
+OSC_IDLE_MODE::0x80	C:\ARCHIV~1\PICC\devices\18F2520.h	271;"	d	line:271
+OSC_INTRC::2	C:\ARCHIV~1\PICC\devices\18F2520.h	268;"	d	line:268
+OSC_NORMAL::0	C:\ARCHIV~1\PICC\devices\18F2520.h	269;"	d	line:269
+OSC_PLL_OFF::0	C:\ARCHIV~1\PICC\devices\18F2520.h	274;"	d	line:274
+OSC_PLL_ON::0x4000	C:\ARCHIV~1\PICC\devices\18F2520.h	273;"	d	line:273
+OSC_STATE_EXT_RUNNING::8	C:\ARCHIV~1\PICC\devices\18F2520.h	279;"	d	line:279
+OSC_STATE_STABLE::4	C:\ARCHIV~1\PICC\devices\18F2520.h	278;"	d	line:278
+OSC_TIMER1::1	C:\ARCHIV~1\PICC\devices\18F2520.h	267;"	d	line:267
+PI	C:\ARCHIV~1\PICC\drivers\math.h	22;"	d	line:22
+PI::3.141592654	C:\ARCHIV~1\PICC\drivers\math.h	24;"	d	line:24
+PIN_A0::31744	C:\ARCHIV~1\PICC\devices\18F2520.h	25;"	d	line:25
+PIN_A1::31745	C:\ARCHIV~1\PICC\devices\18F2520.h	26;"	d	line:26
+PIN_A2::31746	C:\ARCHIV~1\PICC\devices\18F2520.h	27;"	d	line:27
+PIN_A3::31747	C:\ARCHIV~1\PICC\devices\18F2520.h	28;"	d	line:28
+PIN_A4::31748	C:\ARCHIV~1\PICC\devices\18F2520.h	29;"	d	line:29
+PIN_A5::31749	C:\ARCHIV~1\PICC\devices\18F2520.h	30;"	d	line:30
+PIN_A6::31750	C:\ARCHIV~1\PICC\devices\18F2520.h	31;"	d	line:31
+PIN_A7::31751	C:\ARCHIV~1\PICC\devices\18F2520.h	32;"	d	line:32
+PIN_B0::31752	C:\ARCHIV~1\PICC\devices\18F2520.h	34;"	d	line:34
+PIN_B1::31753	C:\ARCHIV~1\PICC\devices\18F2520.h	35;"	d	line:35
+PIN_B2::31754	C:\ARCHIV~1\PICC\devices\18F2520.h	36;"	d	line:36
+PIN_B3::31755	C:\ARCHIV~1\PICC\devices\18F2520.h	37;"	d	line:37
+PIN_B4::31756	C:\ARCHIV~1\PICC\devices\18F2520.h	38;"	d	line:38
+PIN_B5::31757	C:\ARCHIV~1\PICC\devices\18F2520.h	39;"	d	line:39
+PIN_B6::31758	C:\ARCHIV~1\PICC\devices\18F2520.h	40;"	d	line:40
+PIN_B7::31759	C:\ARCHIV~1\PICC\devices\18F2520.h	41;"	d	line:41
+PIN_C0::31760	C:\ARCHIV~1\PICC\devices\18F2520.h	43;"	d	line:43
+PIN_C1::31761	C:\ARCHIV~1\PICC\devices\18F2520.h	44;"	d	line:44
+PIN_C2::31762	C:\ARCHIV~1\PICC\devices\18F2520.h	45;"	d	line:45
+PIN_C3::31763	C:\ARCHIV~1\PICC\devices\18F2520.h	46;"	d	line:46
+PIN_C4::31764	C:\ARCHIV~1\PICC\devices\18F2520.h	47;"	d	line:47
+PIN_C5::31765	C:\ARCHIV~1\PICC\devices\18F2520.h	48;"	d	line:48
+PIN_C6::31766	C:\ARCHIV~1\PICC\devices\18F2520.h	49;"	d	line:49
+PIN_C7::31767	C:\ARCHIV~1\PICC\devices\18F2520.h	50;"	d	line:50
+PIN_E3::31779	C:\ARCHIV~1\PICC\devices\18F2520.h	52;"	d	line:52
+PI_DIV_BY_TWO	C:\ARCHIV~1\PICC\drivers\math.h	360;"	d	line:360
+PI_DIV_BY_TWO::1.570796326794896	C:\ARCHIV~1\PICC\drivers\math.h	362;"	d	line:362
+RAND_MAX::32767	C:\ARCHIV~1\PICC\drivers\stdlib.h	19;"	d	line:19
+READ_FLOAT_EXT_EEPROM	C:\personal\Miguel Angel\archivos globo\estacion\estacion_globo\estacion_globo.c	476;"	f	line:476	signature:(long int n)
+READ_FLOAT_EXT_EEPROM	C:\personal\Miguel Angel\archivos globo\estacion\estacion_globo\estacion_globo.c	96;"	p	line:96	file:	signature:(long int n)
+RESET_INSTRUCTION::0	C:\ARCHIV~1\PICC\devices\18F2520.h	79;"	d	line:79
+RTCC_8_BIT::0x40	C:\ARCHIV~1\PICC\devices\18F2520.h	102;"	d	line:102
+RTCC_DIV_128::6	C:\ARCHIV~1\PICC\devices\18F2520.h	97;"	d	line:97
+RTCC_DIV_16::3	C:\ARCHIV~1\PICC\devices\18F2520.h	94;"	d	line:94
+RTCC_DIV_1::8	C:\ARCHIV~1\PICC\devices\18F2520.h	90;"	d	line:90
+RTCC_DIV_256::7	C:\ARCHIV~1\PICC\devices\18F2520.h	98;"	d	line:98
+RTCC_DIV_2::0	C:\ARCHIV~1\PICC\devices\18F2520.h	91;"	d	line:91
+RTCC_DIV_32::4	C:\ARCHIV~1\PICC\devices\18F2520.h	95;"	d	line:95
+RTCC_DIV_4::1	C:\ARCHIV~1\PICC\devices\18F2520.h	92;"	d	line:92
+RTCC_DIV_64::5	C:\ARCHIV~1\PICC\devices\18F2520.h	96;"	d	line:96
+RTCC_DIV_8::2	C:\ARCHIV~1\PICC\devices\18F2520.h	93;"	d	line:93
+RTCC_EXT_H_TO_L::48	C:\ARCHIV~1\PICC\devices\18F2520.h	88;"	d	line:88
+RTCC_EXT_L_TO_H::32	C:\ARCHIV~1\PICC\devices\18F2520.h	87;"	d	line:87
+RTCC_INTERNAL::0	C:\ARCHIV~1\PICC\devices\18F2520.h	86;"	d	line:86
+RTCC_OFF::0x80	C:\ARCHIV~1\PICC\devices\18F2520.h	100;"	d	line:100
+SPI_CLK_DIV_16::1	C:\ARCHIV~1\PICC\devices\18F2520.h	188;"	d	line:188
+SPI_CLK_DIV_4::0	C:\ARCHIV~1\PICC\devices\18F2520.h	187;"	d	line:187
+SPI_CLK_DIV_64::2	C:\ARCHIV~1\PICC\devices\18F2520.h	189;"	d	line:189
+SPI_CLK_T2::3	C:\ARCHIV~1\PICC\devices\18F2520.h	190;"	d	line:190
+SPI_H_TO_L::0x10	C:\ARCHIV~1\PICC\devices\18F2520.h	186;"	d	line:186
+SPI_L_TO_H::0	C:\ARCHIV~1\PICC\devices\18F2520.h	185;"	d	line:185
+SPI_MASTER::0x20	C:\ARCHIV~1\PICC\devices\18F2520.h	183;"	d	line:183
+SPI_SAMPLE_AT_END::0x8000	C:\ARCHIV~1\PICC\devices\18F2520.h	193;"	d	line:193
+SPI_SLAVE::0x24	C:\ARCHIV~1\PICC\devices\18F2520.h	184;"	d	line:184
+SPI_SS_DISABLED::1	C:\ARCHIV~1\PICC\devices\18F2520.h	191;"	d	line:191
+SPI_XMIT_L_TO_H::0x4000	C:\ARCHIV~1\PICC\devices\18F2520.h	194;"	d	line:194
+SQRT2::1.41421356	C:\ARCHIV~1\PICC\drivers\math.h	27;"	d	line:27
+T1_CLK_OUT::8	C:\ARCHIV~1\PICC\devices\18F2520.h	124;"	d	line:124
+T1_DISABLED::0	C:\ARCHIV~1\PICC\devices\18F2520.h	119;"	d	line:119
+T1_DIV_BY_1::0	C:\ARCHIV~1\PICC\devices\18F2520.h	126;"	d	line:126
+T1_DIV_BY_2::0x10	C:\ARCHIV~1\PICC\devices\18F2520.h	127;"	d	line:127
+T1_DIV_BY_4::0x20	C:\ARCHIV~1\PICC\devices\18F2520.h	128;"	d	line:128
+T1_DIV_BY_8::0x30	C:\ARCHIV~1\PICC\devices\18F2520.h	129;"	d	line:129
+T1_EXTERNAL::0x87	C:\ARCHIV~1\PICC\devices\18F2520.h	121;"	d	line:121
+T1_EXTERNAL_SYNC::0x83	C:\ARCHIV~1\PICC\devices\18F2520.h	122;"	d	line:122
+T1_INTERNAL::0x85	C:\ARCHIV~1\PICC\devices\18F2520.h	120;"	d	line:120
+T2_DISABLED::0	C:\ARCHIV~1\PICC\devices\18F2520.h	134;"	d	line:134
+T2_DIV_BY_16::6	C:\ARCHIV~1\PICC\devices\18F2520.h	137;"	d	line:137
+T2_DIV_BY_1::4	C:\ARCHIV~1\PICC\devices\18F2520.h	135;"	d	line:135
+T2_DIV_BY_4::5	C:\ARCHIV~1\PICC\devices\18F2520.h	136;"	d	line:136
+T3_DISABLED::0	C:\ARCHIV~1\PICC\devices\18F2520.h	143;"	d	line:143
+T3_DIV_BY_1::0	C:\ARCHIV~1\PICC\devices\18F2520.h	148;"	d	line:148
+T3_DIV_BY_2::0x10	C:\ARCHIV~1\PICC\devices\18F2520.h	149;"	d	line:149
+T3_DIV_BY_4::0x20	C:\ARCHIV~1\PICC\devices\18F2520.h	150;"	d	line:150
+T3_DIV_BY_8::0x30	C:\ARCHIV~1\PICC\devices\18F2520.h	151;"	d	line:151
+T3_EXTERNAL::0x87	C:\ARCHIV~1\PICC\devices\18F2520.h	145;"	d	line:145
+T3_EXTERNAL_SYNC::0x83	C:\ARCHIV~1\PICC\devices\18F2520.h	146;"	d	line:146
+T3_INTERNAL::0x85	C:\ARCHIV~1\PICC\devices\18F2520.h	144;"	d	line:144
+TRUE::1	C:\ARCHIV~1\PICC\devices\18F2520.h	56;"	d	line:56
+TWOBYPI	C:\ARCHIV~1\PICC\drivers\math.h	364;"	d	line:364
+TWOBYPI::0.6366197724	C:\ARCHIV~1\PICC\drivers\math.h	365;"	d	line:365
+UART_ADDRESS::2	C:\ARCHIV~1\PICC\devices\18F2520.h	200;"	d	line:200
+UART_AUTODETECT::8	C:\ARCHIV~1\PICC\devices\18F2520.h	202;"	d	line:202
+UART_AUTODETECT_NOWAIT::9	C:\ARCHIV~1\PICC\devices\18F2520.h	203;"	d	line:203
+UART_DATA::4	C:\ARCHIV~1\PICC\devices\18F2520.h	201;"	d	line:201
+UART_SEND_BREAK::13	C:\ARCHIV~1\PICC\devices\18F2520.h	205;"	d	line:205
+UART_WAKEUP_ON_RDA::10	C:\ARCHIV~1\PICC\devices\18F2520.h	204;"	d	line:204
+VREF_COMP::0x10	C:\ARCHIV~1\PICC\devices\18F2520.h	228;"	d	line:228
+VREF_F5::0x40	C:\ARCHIV~1\PICC\devices\18F2520.h	227;"	d	line:227
+VREF_HIGH::0x80	C:\ARCHIV~1\PICC\devices\18F2520.h	225;"	d	line:225
+VREF_LOW::0xa0	C:\ARCHIV~1\PICC\devices\18F2520.h	224;"	d	line:224
+VREF_VDD::0x20	C:\ARCHIV~1\PICC\devices\18F2520.h	329;"	d	line:329
+VREF_VREF::0x30	C:\ARCHIV~1\PICC\devices\18F2520.h	328;"	d	line:328
+VSS_VDD::0x00	C:\ARCHIV~1\PICC\devices\18F2520.h	327;"	d	line:327
+VSS_VREF::0x10	C:\ARCHIV~1\PICC\devices\18F2520.h	330;"	d	line:330
+WDT_FROM_SLEEP::3	C:\ARCHIV~1\PICC\devices\18F2520.h	78;"	d	line:78
+WDT_OFF::0	C:\ARCHIV~1\PICC\devices\18F2520.h	113;"	d	line:113
+WDT_ON::0x100	C:\ARCHIV~1\PICC\devices\18F2520.h	112;"	d	line:112
+WDT_TIMEOUT::7	C:\ARCHIV~1\PICC\devices\18F2520.h	73;"	d	line:73
+WRITE_FLOAT_EXT_EEPROM	C:\personal\Miguel Angel\archivos globo\estacion\estacion_globo\estacion_globo.c	464;"	f	line:464	signature:(long int n, float data)
+WRITE_FLOAT_EXT_EEPROM	C:\personal\Miguel Angel\archivos globo\estacion\estacion_globo\estacion_globo.c	95;"	p	line:95	file:	signature:(long int n, float data)
+_CTYPE	C:\ARCHIV~1\PICC\drivers\ctype.h	12;"	d	line:12
+_Cmpfun	C:\ARCHIV~1\PICC\drivers\stdlib.h	812;"	t	line:812
+_Randseed	C:\ARCHIV~1\PICC\drivers\stdlib.h	795;"	v	line:795
+_STDDEF	C:\ARCHIV~1\PICC\drivers\stddef.h	13;"	d	line:13
+_STDLIB	C:\ARCHIV~1\PICC\drivers\stdlib.h	12;"	d	line:12
+_STRING	C:\ARCHIV~1\PICC\drivers\string.h	12;"	d	line:12
+a	C:\personal\Miguel Angel\archivos globo\estacion\estacion_globo\estacion_globo.c	47;"	v	line:47
+a	C:\personal\Miguel Angel\archivos globo\estacion\estacion_globo\estacion_globo.c	544;"	l	line:544
+acos	C:\ARCHIV~1\PICC\drivers\math.h	513;"	f	line:513	signature:(float x)
+almacena	C:\personal\Miguel Angel\archivos globo\estacion\estacion_globo\estacion_globo.c	111;"	f	line:111
+altura	C:\personal\Miguel Angel\archivos globo\estacion\estacion_globo\estacion_globo.c	72;"	v	line:72
+altura_base	C:\personal\Miguel Angel\archivos globo\estacion\estacion_globo\estacion_globo.c	72;"	v	line:72
+altura_relativa	C:\personal\Miguel Angel\archivos globo\estacion\estacion_globo\estacion_globo.c	72;"	v	line:72
+analogico0	C:\personal\Miguel Angel\archivos globo\estacion\estacion_globo\estacion_globo.c	58;"	v	line:58
+anio	C:\personal\Miguel Angel\archivos globo\estacion\estacion_globo\estacion_globo.c	50;"	v	line:50
+anio_envia	C:\personal\Miguel Angel\archivos globo\estacion\estacion_globo\estacion_globo.c	75;"	v	line:75
+asin	C:\ARCHIV~1\PICC\drivers\math.h	498;"	f	line:498	signature:(float x)
+atan	C:\ARCHIV~1\PICC\drivers\math.h	530;"	f	line:530	signature:(float x)
+atan2	C:\ARCHIV~1\PICC\drivers\math.h	580;"	f	line:580	signature:(float y,float x)
+atoe	C:\ARCHIV~1\PICC\drivers\stdlib.h	270;"	f	line:270	signature:(char * s)
+atoe	C:\ARCHIV~1\PICC\drivers\stdlib.h	50;"	p	line:50	signature:(char * s)
+atof	C:\ARCHIV~1\PICC\drivers\stdlib.h	231;"	f	line:231	signature:(char * s)
+atof	C:\ARCHIV~1\PICC\drivers\stdlib.h	43;"	p	line:43	signature:(char * s)
+atoi	C:\ARCHIV~1\PICC\drivers\stdlib.h	337;"	f	line:337	signature:(char *s)
+atoi	C:\ARCHIV~1\PICC\drivers\stdlib.h	56;"	p	line:56	signature:(char *s)
+atoi32	C:\ARCHIV~1\PICC\drivers\stdlib.h	478;"	f	line:478	signature:(char *s)
+atoi32	C:\ARCHIV~1\PICC\drivers\stdlib.h	61;"	p	line:61	signature:(char *s)
+atol	C:\ARCHIV~1\PICC\drivers\stdlib.h	406;"	f	line:406	signature:(char *s)
+atol	C:\ARCHIV~1\PICC\drivers\stdlib.h	72;"	p	line:72	signature:(char *s)
+base	C:\ARCHIV~1\PICC\drivers\stdlib.h	340;"	l	line:340
+base	C:\ARCHIV~1\PICC\drivers\stdlib.h	409;"	l	line:409
+base	C:\ARCHIV~1\PICC\drivers\stdlib.h	481;"	l	line:481
+bateria	C:\personal\Miguel Angel\archivos globo\estacion\estacion_globo\estacion_globo.c	59;"	v	line:59
+beg	C:\ARCHIV~1\PICC\drivers\string.h	330;"	l	line:330
+bsearch	C:\ARCHIV~1\PICC\drivers\stdlib.h	842;"	f	line:842	signature:(char *key, char *base, size_t num, size_t width,_Cmpfun cmp)
+c	C:\ARCHIV~1\PICC\drivers\math.h	431;"	l	line:431
+c	C:\ARCHIV~1\PICC\drivers\stdlib.h	236;"	l	line:236
+c	C:\ARCHIV~1\PICC\drivers\stdlib.h	276;"	l	line:276
+c	C:\ARCHIV~1\PICC\drivers\stdlib.h	341;"	l	line:341
+c	C:\ARCHIV~1\PICC\drivers\stdlib.h	410;"	l	line:410
+c	C:\ARCHIV~1\PICC\drivers\stdlib.h	482;"	l	line:482
+c	C:\ARCHIV~1\PICC\drivers\stdlib.h	547;"	l	line:547
+c	C:\ARCHIV~1\PICC\drivers\stdlib.h	584;"	l	line:584
+cadena_ent	C:\personal\Miguel Angel\archivos globo\estacion\estacion_globo\estacion_globo.c	541;"	f	line:541	signature:(char *cadena)
+canal_an1::pin_a0	C:\personal\Miguel Angel\archivos globo\estacion\estacion_globo\estacion_globo.c	11;"	d	line:11	file:
+canal_an2::pin_a1	C:\personal\Miguel Angel\archivos globo\estacion\estacion_globo\estacion_globo.c	12;"	d	line:12	file:
+canal_an3::pin_a2	C:\personal\Miguel Angel\archivos globo\estacion\estacion_globo\estacion_globo.c	13;"	d	line:13	file:
+cantidad_estaciones	C:\personal\Miguel Angel\archivos globo\estacion\estacion_globo\estacion_globo.c	49;"	v	line:49
+car_fin	C:\personal\Miguel Angel\archivos globo\estacion\estacion_globo\estacion_globo.c	673;"	l	line:673
+caracter_inicio	C:\personal\Miguel Angel\archivos globo\estacion\estacion_globo\estacion_globo.c	113;"	l	line:113
+caracter_inicio	C:\personal\Miguel Angel\archivos globo\estacion\estacion_globo\estacion_globo.c	648;"	l	line:648
+caracter_r	C:\personal\Miguel Angel\archivos globo\estacion\estacion_globo\estacion_globo.c	675;"	l	line:675
+ceil	C:\ARCHIV~1\PICC\drivers\math.h	99;"	f	line:99	signature:(float x)
+clk::pin_c7	C:\personal\Miguel Angel\archivos globo\estacion\estacion_globo\estacion_globo.c	24;"	d	line:24	file:
+cnt	C:\ARCHIV~1\PICC\drivers\stdlib.h	546;"	l	line:546
+config_canales	C:\personal\Miguel Angel\archivos globo\estacion\estacion_globo\estacion_globo.c	594;"	f	line:594
+configurado	C:\personal\Miguel Angel\archivos globo\estacion\estacion_globo\estacion_globo.c	50;"	v	line:50
+contador	C:\personal\Miguel Angel\archivos globo\estacion\estacion_globo\estacion_globo.c	522;"	l	line:522
+contador	C:\personal\Miguel Angel\archivos globo\estacion\estacion_globo\estacion_globo.c	573;"	l	line:573
+cos	C:\ARCHIV~1\PICC\drivers\math.h	373;"	f	line:373	signature:(float x)
+cosh	C:\ARCHIV~1\PICC\drivers\math.h	659;"	f	line:659	signature:(float x)
+cuenta_seg	C:\personal\Miguel Angel\archivos globo\estacion\estacion_globo\estacion_globo.c	77;"	v	line:77
+data	C:\personal\Miguel Angel\archivos globo\estacion\estacion_globo\estacion_globo.c	478;"	l	line:478
+datos::pin_c6	C:\personal\Miguel Angel\archivos globo\estacion\estacion_globo\estacion_globo.c	23;"	d	line:23	file:
+dia	C:\personal\Miguel Angel\archivos globo\estacion\estacion_globo\estacion_globo.c	50;"	v	line:50
+dia_envia	C:\personal\Miguel Angel\archivos globo\estacion\estacion_globo\estacion_globo.c	75;"	v	line:75
+digits	C:\ARCHIV~1\PICC\drivers\stdlib.h	639;"	l	line:639
+digits	C:\ARCHIV~1\PICC\drivers\stdlib.h	704;"	l	line:704
+dir_acumulada	C:\personal\Miguel Angel\archivos globo\estacion\estacion_globo\estacion_globo.c	68;"	v	line:68
+dir_enviar	C:\personal\Miguel Angel\archivos globo\estacion\estacion_globo\estacion_globo.c	71;"	v	line:71
+dir_fin	C:\personal\Miguel Angel\archivos globo\estacion\estacion_globo\estacion_globo.c	78;"	v	line:78
+dir_ini::64	C:\personal\Miguel Angel\archivos globo\estacion\estacion_globo\estacion_globo.c	31;"	d	line:31	file:
+dir_mem	C:\personal\Miguel Angel\archivos globo\estacion\estacion_globo\estacion_globo.c	78;"	v	line:78
+div	C:\ARCHIV~1\PICC\drivers\stdlib.h	192;"	p	line:192	signature:(signed int numer,signed int denom)
+div	C:\ARCHIV~1\PICC\drivers\stdlib.h	215;"	f	line:215	signature:(signed int numer,signed int denom)
+div_t	C:\ARCHIV~1\PICC\drivers\stdlib.h	26;"	t	line:26
+done	C:\ARCHIV~1\PICC\drivers\stdlib.h	816;"	l	line:816
+end	C:\ARCHIV~1\PICC\drivers\string.h	330;"	l	line:330
+envia_datos	C:\personal\Miguel Angel\archivos globo\estacion\estacion_globo\estacion_globo.c	100;"	p	line:100	file:	signature:(void)
+envia_datos	C:\personal\Miguel Angel\archivos globo\estacion\estacion_globo\estacion_globo.c	646;"	f	line:646	signature:(void)
+envia_rf	C:\personal\Miguel Angel\archivos globo\estacion\estacion_globo\estacion_globo.c	621;"	f	line:621	signature:(byte caracter)
+envia_rf	C:\personal\Miguel Angel\archivos globo\estacion\estacion_globo\estacion_globo.c	97;"	p	line:97	file:	signature:(byte caracter)
+estacion_q_envia	C:\personal\Miguel Angel\archivos globo\estacion\estacion_globo\estacion_globo.c	90;"	v	line:90
+ex	C:\personal\Miguel Angel\archivos globo\estacion\estacion_globo\estacion_globo.c	544;"	l	line:544
+exor	C:\personal\Miguel Angel\archivos globo\estacion\estacion_globo\estacion_globo.c	85;"	v	line:85
+exp	C:\ARCHIV~1\PICC\drivers\math.h	154;"	f	line:154	signature:(float x)
+exp	C:\ARCHIV~1\PICC\drivers\stdlib.h	279;"	l	line:279
+expcnt	C:\ARCHIV~1\PICC\drivers\stdlib.h	280;"	l	line:280
+expsign	C:\ARCHIV~1\PICC\drivers\stdlib.h	275;"	l	line:275
+fabs::abs	C:\ARCHIV~1\PICC\drivers\math.h	111;"	d	line:111
+fgetc::getch	C:\ARCHIV~1\PICC\devices\18F2520.h	62;"	d	line:62
+fgets::gets	C:\ARCHIV~1\PICC\devices\18F2520.h	66;"	d	line:66
+flag	C:\ARCHIV~1\PICC\drivers\math.h	533;"	l	line:533
+floor	C:\ARCHIV~1\PICC\drivers\math.h	88;"	f	line:88	signature:(float x)
+fmod	C:\ARCHIV~1\PICC\drivers\math.h	123;"	f	line:123	signature:(float x,float y)
+fputc::putchar	C:\ARCHIV~1\PICC\devices\18F2520.h	65;"	d	line:65
+fputs::puts	C:\ARCHIV~1\PICC\devices\18F2520.h	67;"	d	line:67
+frac	C:\ARCHIV~1\PICC\drivers\math.h	377;"	l	line:377
+frexp	C:\ARCHIV~1\PICC\drivers\math.h	705;"	f	line:705	signature:(float x, signed int *exp)
+getc::getch	C:\ARCHIV~1\PICC\devices\18F2520.h	61;"	d	line:61
+getchar::getch	C:\ARCHIV~1\PICC\devices\18F2520.h	63;"	d	line:63
+guarda_altura_base	C:\personal\Miguel Angel\archivos globo\estacion\estacion_globo\estacion_globo.c	73;"	v	line:73
+habilitador::pin_a5	C:\personal\Miguel Angel\archivos globo\estacion\estacion_globo\estacion_globo.c	15;"	d	line:15	file:
+hora_envia	C:\personal\Miguel Angel\archivos globo\estacion\estacion_globo\estacion_globo.c	75;"	v	line:75
+horas	C:\personal\Miguel Angel\archivos globo\estacion\estacion_globo\estacion_globo.c	50;"	v	line:50
+hum_acumulada	C:\personal\Miguel Angel\archivos globo\estacion\estacion_globo\estacion_globo.c	68;"	v	line:68
+hum_enviar	C:\personal\Miguel Angel\archivos globo\estacion\estacion_globo\estacion_globo.c	71;"	v	line:71
+humedad	C:\personal\Miguel Angel\archivos globo\estacion\estacion_globo\estacion_globo.c	61;"	v	line:61
+humedad_comp	C:\personal\Miguel Angel\archivos globo\estacion\estacion_globo\estacion_globo.c	62;"	v	line:62
+humedad_lineal	C:\personal\Miguel Angel\archivos globo\estacion\estacion_globo\estacion_globo.c	62;"	v	line:62
+i	C:\ARCHIV~1\PICC\drivers\math.h	125;"	l	line:125
+i	C:\ARCHIV~1\PICC\drivers\math.h	376;"	l	line:376
+i	C:\ARCHIV~1\PICC\drivers\stdlib.h	278;"	l	line:278
+i	C:\ARCHIV~1\PICC\drivers\stdlib.h	546;"	l	line:546
+i	C:\ARCHIV~1\PICC\drivers\stdlib.h	815;"	l	line:815
+i	C:\personal\Miguel Angel\archivos globo\estacion\estacion_globo\estacion_globo.c	466;"	l	line:466
+i	C:\personal\Miguel Angel\archivos globo\estacion\estacion_globo\estacion_globo.c	477;"	l	line:477
+id_estacion	C:\personal\Miguel Angel\archivos globo\estacion\estacion_globo\estacion_globo.c	48;"	v	line:48
+index	C:\ARCHIV~1\PICC\drivers\stdlib.h	340;"	l	line:340
+index	C:\ARCHIV~1\PICC\drivers\stdlib.h	409;"	l	line:409
+index	C:\ARCHIV~1\PICC\drivers\stdlib.h	481;"	l	line:481
+indicador::pin_c0	C:\personal\Miguel Angel\archivos globo\estacion\estacion_globo\estacion_globo.c	16;"	d	line:16	file:
+ini_cadena	C:\personal\Miguel Angel\archivos globo\estacion\estacion_globo\estacion_globo.c	545;"	l	line:545
+inicia_calibracion	C:\personal\Miguel Angel\archivos globo\estacion\estacion_globo\estacion_globo.c	91;"	v	line:91
+inicio_lectura	C:\personal\Miguel Angel\archivos globo\estacion\estacion_globo\estacion_globo.c	87;"	v	line:87
+isalnum::(x)isamong(x,"0123456789ABCDEF	C:\ARCHIV~1\PICC\drivers\ctype.h	16;"	d	line:16
+isalpha::(x)isamong(x,"ABCDEFGHIJKLMNOP	C:\ARCHIV~1\PICC\drivers\ctype.h	17;"	d	line:17
+iscntrl::(x)((x)<'')	C:\ARCHIV~1\PICC\drivers\ctype.h	21;"	d	line:21
+isdigit::(x)isamong(x,"0123456789")	C:\ARCHIV~1\PICC\drivers\ctype.h	18;"	d	line:18
+isgraph::(x)((x)>'')	C:\ARCHIV~1\PICC\drivers\ctype.h	23;"	d	line:23
+islower::(x)isamong(x,"abcdefghijklmnop	C:\ARCHIV~1\PICC\drivers\ctype.h	14;"	d	line:14
+isprint::(x)((x)>='')	C:\ARCHIV~1\PICC\drivers\ctype.h	22;"	d	line:22
+ispunct::(x)(((x)>'')&&!isalnum(x))	C:\ARCHIV~1\PICC\drivers\ctype.h	24;"	d	line:24
+isspace::(x)((x)=='')	C:\ARCHIV~1\PICC\drivers\ctype.h	19;"	d	line:19
+isupper::(x)isamong(x,"ABCDEFGHIJKLMNOP	C:\ARCHIV~1\PICC\drivers\ctype.h	15;"	d	line:15
+isxdigit::(x)isamong(x,"0123456789ABCDEF	C:\ARCHIV~1\PICC\drivers\ctype.h	20;"	d	line:20
+itoa	C:\ARCHIV~1\PICC\drivers\stdlib.h	543;"	f	line:543	signature:(signed int32 num, int8 base, char *s)
+itoa	C:\ARCHIV~1\PICC\drivers\stdlib.h	66;"	p	line:66	signature:(signed int32 num, int8 base, char * s)
+j	C:\ARCHIV~1\PICC\drivers\stdlib.h	815;"	l	line:815
+l	C:\ARCHIV~1\PICC\drivers\math.h	37;"	l	line:37
+l	C:\ARCHIV~1\PICC\drivers\stdlib.h	815;"	l	line:815
+labs::abs	C:\ARCHIV~1\PICC\drivers\stdlib.h	190;"	d	line:190
+ldexp	C:\ARCHIV~1\PICC\drivers\math.h	757;"	f	line:757	signature:(float value, signed int exp)
+ldiv	C:\ARCHIV~1\PICC\drivers\stdlib.h	193;"	p	line:193	signature:(signed long numer,signed long denom)
+ldiv	C:\ARCHIV~1\PICC\drivers\stdlib.h	223;"	f	line:223	signature:(signed long numer,signed long denom)
+ldiv_t	C:\ARCHIV~1\PICC\drivers\stdlib.h	31;"	t	line:31
+lee_cadena	C:\personal\Miguel Angel\archivos globo\estacion\estacion_globo\estacion_globo.c	518;"	f	line:518	signature:(void)
+lee_cadena_ent	C:\personal\Miguel Angel\archivos globo\estacion\estacion_globo\estacion_globo.c	569;"	f	line:569	signature:(void)
+localidad_dir_fin::0x20	C:\personal\Miguel Angel\archivos globo\estacion\estacion_globo\estacion_globo.c	33;"	d	line:33	file:
+log	C:\ARCHIV~1\PICC\drivers\math.h	206;"	f	line:206	signature:(float x)
+log10	C:\ARCHIV~1\PICC\drivers\math.h	265;"	f	line:265	signature:(float x)
+m	C:\ARCHIV~1\PICC\drivers\stdlib.h	815;"	l	line:815
+main	C:\personal\Miguel Angel\archivos globo\estacion\estacion_globo\estacion_globo.c	670;"	f	line:671M
+}blen	C:\ARCHIV~\ICC\driveps\stdlib.h	762;"	f	line:762	sig~ature:(char *s,size_t n)
+mbstowcs	C:\ARCHIV~1\PICC\drivers\stdlib.h	379;"	f	line:w79	signature:(÷char_u *pwcs,ch!r(*r,size_d n)
+mbtowc	C:\ARCH	V~1\PICC\drivers\stdlib.h	w67;"	f	line:766siGna|ube:(wcharWt *rwc,char +s,sIze[t n)
+memchr)Ã:\AZCHIV1\PICC\drivers\string.h	99;"‰f	line8199	qignatur%:(void *slint c,shze_t n)
+memcmp	Cº\ARCHIV~1TPICC\drivers\string.h	128;"	f	line:12signature:(vnid * s1,chap *s2,siZe_p n)
+Meimove	C:\ARCÈIV~1\PICC\drivers\strkng.h	34;"	f	line*34	signátur=:(void *s1,cjar *s²,size_t n)
+memoria_llena	C:\personal\Migugl Angel\arcìivos globï\Es4acion\estacion_glmbo\estaCion_g,obo.a	87;"	v	line*8?
+mes	C:\pepsonal]Miguel Angel^archivo3 glkbo\estacyon\%stacion_globoXestacionglobo.cI5;"	v	lind:50
+mes_envia	C:\personal\Miguel Angel\archi6os globO\estacion\estacion_globo\estacion_globo.c	75;¢	~	line:75
+min_envia	C:\pgrsonalTMiguel0Angela2chyvos globo\eStacion\esvacion_globo\estácion_globo.c	75;"	v	line:75
+minutos	C:\personal\Miguel Angel\archivos globo\estacion\estacion_globo\estacion_globo.c	50;"	v	line:50
+miputc	C:\personal\Miguel Angel\archivos globo\estacion\estacion_globo\estacion_globo.c	486;"	f	line:486	signature:(byte caracter)
+modf	C:\ARCHIV~1\PICC\drivers\math.h	284;"	f	line:284	signature:(float value,float *iptr)
+mul0	C:\personal\Miguel Angel\archivos globo\estacion\estacion_globo\estacion_globo.c	83;"	v	line:83
+mul1	C:\personal\Miguel Angel\archivos globo\estacion\estacion_globo\estacion_globo.c	83;"	v	line:83
+mul2	C:\personal\Miguel Angel\archivos globo\estacion\estacion_globo\estacion_globo.c	83;"	v	line:83
+mul3	C:\personal\Miguel Angel\archivos globo\estacion\estacion_globo\estacion_globo.c	83;"	v	line:83
+mult_with10	C:\ARCHIV~1\PICC\drivers\stdlib.h	473;"	f	line:473	signature:(int32 num)
+n	C:\ARCHIV~1\PICC\drivers\math.h	157;"	l	line:157
+n	C:\ARCHIV~1\PICC\drivers\math.h	209;"	l	line:209
+n	C:\ARCHIV~1\PICC\drivers\stdlib.h	845;"	l	line:845
+n1	C:\ARCHIV~1\PICC\drivers\string.h	180;"	l	line:180
+no_pulsos	C:\personal\Miguel Angel\archivos globo\estacion\estacion_globo\estacion_globo.c	56;"	v	line:56
+num_dia	C:\personal\Miguel Angel\archivos globo\estacion\estacion_globo\estacion_globo.c	50;"	v	line:50
+num_nores	C:\personal\Miguel Angel\archivos globo\estacion\estacion_globo\estacion_globo.c	490;"	l	line:490
+offset0	C:\personal\Miguel Angel\archivos globo\estacion\estacion_globo\estacion_globo.c	84;"	v	line:84
+offset1	C:\personal\Miguel Angel\archivos globo\estacion\estacion_globo\estacion_globo.c	84;"	v	line:84
+offset2	C:\personal\Miguel Angel\archivos globo\estacion\estacion_globo\estacion_globo.c	84;"	v	line:84
+offset3	C:\personal\Miguel Angel\archivos globo\estacion\estacion_globo\estacion_globo.c	84;"	v	line:84
+offsetof::(s,f)(offsetofbit(s,f)/8)	C:\ARCHIV~1\PICC\drivers\stddef.h	25;"	d	line:25
+p	C:\ARCHIV~1\PICC\drivers\math.h	331;"	l	line:331
+p	C:\ARCHIV~1\PICC\drivers\math.h	378;"	l	line:378
+p	C:\ARCHIV~1\PICC\drivers\stdlib.h	844;"	l	line:844
+p	C:\ARCHIV~1\PICC\drivers\string.h	257;"	l	line:257
+p	C:\ARCHIV~1\PICC\drivers\string.h	404;"	l	line:404
+pas	C:\ARCHIV~1\PICC\drivers\math.h	443;"	v	line:443
+pat	C:\ARCHIV~1\PICC\drivers\math.h	521;"	v	line:521
+pe	C:\ARCHIV~1\PICC\drivers\math.h	145;"	v	line:145
+pin_calibracion::pin_C1	C:\personal\Miguel Angel\archivos globo\estacion\estacion_globo\estacion_globo.c	17;"	d	line:17	file:
+pin_sync::pin_c2	C:\personal\Miguel Angel\archivos globo\estacion\estacion_globo\estacion_globo.c	18;"	d	line:18	file:
+pivot	C:\ARCHIV~1\PICC\drivers\stdlib.h	846;"	l	line:846
+pl	C:\ARCHIV~1\PICC\drivers\math.h	197;"	v	line:197
+point	C:\ARCHIV~1\PICC\drivers\stdlib.h	583;"	l	line:583
+potencia	C:\personal\Miguel Angel\archivos globo\estacion\estacion_globo\estacion_globo.c	543;"	l	line:543
+pow	C:\ARCHIV~1\PICC\drivers\math.h	314;"	f	line:314	signature:(float x,float y)
+pow10	C:\ARCHIV~1\PICC\drivers\stdlib.h	233;"	l	line:233
+pow10	C:\ARCHIV~1\PICC\drivers\stdlib.h	272;"	l	line:272
+pow10	C:\ARCHIV~1\PICC\drivers\stdlib.h	581;"	l	line:581
+pres_acumulada	C:\personal\Miguel Angel\archivos globo\estacion\estacion_globo\estacion_globo.c	68;"	v	line:68
+pres_enviar	C:\personal\Miguel Angel\archivos globo\estacion\estacion_globo\estacion_globo.c	71;"	v	line:71
+ptr	C:\ARCHIV~1\PICC\drivers\stdlib.h	237;"	l	line:237
+ptr	C:\ARCHIV~1\PICC\drivers\stdlib.h	277;"	l	line:277
+ptr	C:\ARCHIV~1\PICC\drivers\stdlib.h	585;"	l	line:585
+ptrdiff_t::int	C:\ARCHIV~1\PICC\drivers\stddef.h	16;"	d	line:16
+ptrdiff_t::long	C:\ARCHIV~1\PICC\drivers\stddef.h	18;"	d	line:18
+pulso_muestreo::pin_b0	C:\personal\Miguel Angel\archivos globo\estacion\estacion_globo\estacion_globo.c	25;"	d	line:25	file:
+pulsos1::pin_b1	C:\personal\Miguel Angel\archivos globo\estacion\estacion_globo\estacion_globo.c	26;"	d	line:26	file:
+putc::putchar	C:\ARCHIV~1\PICC\devices\18F2520.h	64;"	d	line:64
+pwr	C:\ARCHIV~1\PICC\drivers\math.h	297;"	f	line:297	signature:(float x,float y)
+q	C:\ARCHIV~1\PICC\drivers\stdlib.h	844;"	l	line:844
+qas	C:\ARCHIV~1\PICC\drivers\math.h	444;"	v	line:444
+qat	C:\ARCHIV~1\PICC\drivers\math.h	522;"	v	line:522
+ql	C:\ARCHIV~1\PICC\drivers\math.h	198;"	v	line:198
+qsort	C:\ARCHIV~1\PICC\drivers\stdlib.h	814;"	f	line:814	signature:(char * qdata, int qitems, int qsize, _Cmpfun cmp)
+quad	C:\ARCHIV~1\PICC\drivers\math.h	376;"	l	line:376
+quad	C:\ARCHIV~1\PICC\drivers\math.h	584;"	l	line:584
+quot	C:\ARCHIV~1\PICC\drivers\stdlib.h	24;"	m	line:24
+quot	C:\ARCHIV~1\PICC\drivers\stdlib.h	29;"	m	line:29
+r	C:\ARCHIV~1\PICC\drivers\math.h	156;"	l	line:156
+r	C:\ARCHIV~1\PICC\drivers\math.h	208;"	l	line:208
+r	C:\ARCHIV~1\PICC\drivers\math.h	267;"	l	line:267
+r	C:\ARCHIV~1\PICC\drivers\math.h	448;"	l	line:448
+r	C:\ARCHIV~1\PICC\drivers\math.h	500;"	l	line:500
+r	C:\ARCHIV~1\PICC\drivers\math.h	515;"	l	line:515
+r	C:\ARCHIV~1\PICC\drivers\math.h	532;"	l	line:532
+rand	C:\ARCHIV~1\PICC\drivers\stdlib.h	110;"	p	line:110	signature:(void)
+rand	C:\ARCHIV~1\PICC\drivers\stdlib.h	797;"	f	line:797	signature:(void)
+realiza_lectura	C:\personal\Miguel Angel\archivos globo\estacion\estacion_globo\estacion_globo.c	362;"	f	line:362	signature:(void)
+realiza_lectura	C:\personal\Miguel Angel\archivos globo\estacion\estacion_globo\estacion_globo.c	94;"	p	line:94	file:	signature:(void)
+rem	C:\ARCHIV~1\PICC\drivers\stdlib.h	25;"	m	line:25
+rem	C:\ARCHIV~1\PICC\drivers\stdlib.h	30;"	m	line:30
+res	C:\ARCHIV~1\PICC\drivers\math.h	156;"	l	line:156
+res	C:\ARCHIV~1\PICC\drivers\math.h	208;"	l	line:208
+res	C:\ARCHIV~1\PICC\drivers\math.h	330;"	l	line:330
+res	C:\ARCHIV~1\PICC\drivers\math.h	36;"	l	line:36
+res	C:\ARCHIV~1\PICC\drivers\math.h	448;"	l	line:448
+res	C:\ARCHIV~1\PICC\drivers\math.h	532;"	l	line:532
+res	C:\ARCHIV~1\PICC\drivers\math.h	707;"	l	line:707
+respuesta	C:\personal\Miguel Angel\archivos globo\estacion\estacion_globo\estacion_globo.c	489;"	l	line:489
+result	C:\ARCHIV~1\PICC\drivers\stdlib.h	234;"	l	line:234
+result	C:\ARCHIV~1\PICC\drivers\stdlib.h	273;"	l	line:273
+result	C:\ARCHIV~1\PICC\drivers\stdlib.h	339;"	l	line:339
+result	C:\ARCHIV~1\PICC\drivers\stdlib.h	408;"	l	line:408
+result	C:\ARCHIV~1\PICC\drivers\stdlib.h	480;"	l	line:480
+result	C:\ARCHIV~1\PICC\drivers\stdlib.h	582;"	l	line:582
+resultado	C:\personal\Miguel Angel\archivos globo\estacion\estacion_globo\estacion_globo.c	523;"	l	line:523
+resultado	C:\personal\Miguel Angel\archivos globo\estacion\estacion_globo\estacion_globo.c	546;"	l	line:546
+resultado	C:\personal\Miguel Angel\archivos globo\estacion\estacion_globo\estacion_globo.c	574;"	l	line:574
+rutina_timer	C:\personal\Miguel Angel\archivos globo\estacion\estacion_globo\estacion_globo.c	102;"	f	line:102
+s	C:\ARCHIV~1\PICC\drivers\math.h	158;"	l	line:158
+s	C:\ARCHIV~1\PICC\drivers\math.h	38;"	l	line:38
+s	C:\ARCHIV~1\PICC\drivers\math.h	431;"	l	line:431
+s	C:\ARCHIV~1\PICC\drivers\math.h	449;"	l	line:449
+s	C:\ARCHIV~1\PICC\drivers\math.h	533;"	l	line:533
+s	C:\ARCHIV~1\PICC\drivers\string.h	106;"	l	line:106
+s	C:\ARCHIV~1\PICC\drivers\string.h	179;"	l	line:179
+s	C:\ARCHIV~1\PICC\drivers\string.h	291;"	l	line:291
+s	C:\ARCHIV~1\PICC\drivers\string.h	359;"	l	line:359
+s	C:\ARCHIV~1\PICC\drivers\string.h	55;"	l	line:55
+s	C:\ARCHIV~1\PICC\drivers\string.h	71;"	l	line:71
+s	C:\ARCHIV~1\PICC\drivers\string.h	88;"	l	line:88
+s1	C:\ARCHIV~1\PICC\drivers\stdlib.h	636;"	l	line:636
+s1	C:\ARCHIV~1\PICC\drivers\stdlib.h	701;"	l	line:701
+save	C:\ARCHIV~1\PICC\drivers\string.h	331;"	l	line:331
+sc	C:\ARCHIV~1\PICC\drivers\stdlib.h	636;"	l	line:636
+sc	C:\ARCHIV~1\PICC\drivers\stdlib.h	701;"	l	line:701
+sc	C:\ARCHIV~1\PICC\drivers\string.h	379;"	l	line:379
+sc1	C:\ARCHIV~1\PICC\drivers\string.h	227;"	l	line:227
+sc1	C:\ARCHIV~1\PICC\drivers\string.h	242;"	l	line:242
+sc1	C:\ARCHIV~1\PICC\drivers\string.h	272;"	l	line:272
+sc1	C:\ARCHIV~1\PICC\drivers\string.h	36;"	l	line:36
+sc2	C:\ARCHIV~1\PICC\drivers\string.h	227;"	l	line:227
+sc2	C:\ARCHIV~1\PICC\drivers\string.h	242;"	l	line:242
+sc2	C:\ARCHIV~1\PICC\drivers\string.h	272;"	l	line:272
+sc2	C:\ARCHIV~1\PICC\drivers\string.h	37;"	l	line:37
+sd	C:\ARCHIV~1\PICC\drivers\stdlib.h	636;"	l	line:636
+sd	C:\ARCHIV~1\PICC\drivers\stdlib.h	701;"	l	line:701
+seg_envia	C:\personal\Miguel Angel\archivos globo\estacion\estacion_globo\estacion_globo.c	75;"	v	line:75
+segundos	C:\personal\Miguel Angel\archivos globo\estacion\estacion_globo\estacion_globo.c	50;"	v	line:50
+segundos_muestra	C:\personal\Miguel Angel\archivos globo\estacion\estacion_globo\estacion_globo.c	77;"	v	line:77
+sign	C:\ARCHIV~1\PICC\drivers\math.h	583;"	l	line:583
+sign	C:\ARCHIV~1\PICC\drivers\math.h	708;"	l	line:708
+sign	C:\ARCHIV~1\PICC\drivers\stdlib.h	235;"	l	line:235
+sign	C:\ARCHIV~1\PICC\drivers\stdlib.h	274;"	l	line:274
+sign	C:\ARCHIV~1\PICC\drivers\stdlib.h	340;"	l	line:340
+sign	C:\ARCHIV~1\PICC\drivers\stdlib.h	409;"	l	line:409
+sign	C:\ARCHIV~1\PICC\drivers\stdlib.h	481;"	l	line:481
+sign	C:\ARCHIV~1\PICC\drivers\stdlib.h	546;"	l	line:546
+sign	C:\ARCHIV~1\PICC\drivers\stdlib.h	583;"	l	line:583
+sign	C:\ARCHIV~1\PICC\drivers\stdlib.h	638;"	l	line:638
+sign	C:\ARCHIV~1\PICC\drivers\stdlib.h	703;"	l	line:703
+sin	C:\ARCHIV~1\PICC\drivers\math.h	418;"	f	line:418	signature:(float x)
+sinh	C:\ARCHIV~1\PICC\drivers\math.h	672;"	f	line:672	signature:(float x)
+size_t::int	C:\ARCHIV~1\PICC\drivers\stddef.h	21;"	d	line:21
+sqrt	C:\ARCHIV~1\PICC\drivers\math.h	328;"	f	line:328	signature:(float x)
+srand	C:\ARCHIV~1\PICC\drivers\stdlib.h	132;"	p	line:132	signature:(unsigned int32 seed)
+srand	C:\ARCHIV~1\PICC\drivers\stdlib.h	803;"	f	line:803	signature:(unsigned int32 seed)
+strcat	C:\ARCHIV~1\PICC\drivers\string.h	86;"	f	line:86	signature:(char *s1, char *s2)
+strchr	C:\ARCHIV~1\PICC\drivers\string.h	213;"	f	line:213	signature:(char *s, int c)
+strcmp	C:\ARCHIV~1\PICC\drivers\string.h	142;"	f	line:142	signature:(char *s1, char *s2)
+strcoll	C:\ARCHIV~1\PICC\drivers\string.h	152;"	f	line:152	signature:(char *s1, char *s2)
+strcopy	C:\ARCHIV~1\PICC\drivers\string.h	53;"	f	line:53	signature:(char *s1, char *s2)
+strcspn	C:\ARCHIV~1\PICC\drivers\string.h	225;"	f	line:225	signature:(char *s1, char *s2)
+strerror	C:\ARCHIV~1\PICC\drivers\string.h	357;"	f	line:357	signature:(int errnum)
+stricmp	C:\ARCHIV~1\PICC\drivers\string.h	388;"	f	line:388	signature:(char *s1, char *s2)
+strlen	C:\ARCHIV~1\PICC\drivers\string.h	377;"	f	line:377	signature:(char *s)
+strlwr	C:\ARCHIV~1\PICC\drivers\string.h	402;"	f	line:402	signature:(char *s)
+strncat	C:\ARCHIV~1\PICC\drivers\string.h	104;"	f	line:104	signature:(char *s1, char *s2, size_t n)
+strncmp	C:\ARCHIV~1\PICC\drivers\string.h	165;"	f	line:165	signature:(char *s1, char *s2, size_t n)
+strncpy	C:\ARCHIV~1\PICC\drivers\string.h	69;"	f	line:69	signature:(char *s1, char *s2, size_t n)
+strpbrk	C:\ARCHIV~1\PICC\drivers\string.h	240;"	f	line:240	signature:(char *s1, char *s2)
+strrchr	C:\ARCHIV~1\PICC\drivers\string.h	255;"	f	line:255	signature:(char *s, int c)
+strspn	C:\ARCHIV~1\PICC\drivers\string.h	270;"	f	line:270	signature:(char *s1, char *s2)
+strstr	C:\ARCHIV~1\PICC\drivers\string.h	289;"	f	line:289	signature:(char *s1, char *s2)
+strtod	C:\ARCHIV~1\PICC\drivers\stdlib.h	580;"	f	line:580	signature:(char *s,char *endptr)
+strtod	C:\ARCHIV~1\PICC\drivers\stdlib.h	79;"	p	line:79	signature:(char *s,char *endptr)
+strtok	C:\ARCHIV~1\PICC\drivers\string.h	328;"	f	line:328	signature:(char *s1, char *s2)
+strtol	C:\ARCHIV~1\PICC\drivers\stdlib.h	699;"	f	line:699	signature:(char *s,char *endptr,signed int base)
+strtol	C:\ARCHIV~1\PICC\drivers\stdlib.h	87;"	p	line:87	signature:(char *s,char *endptr,signed int base)
+strtoul	C:\ARCHIV~1\PICC\drivers\stdlib.h	634;"	f	line:634	signature:(char *s,char *endptr,signed int base)
+strtoul	C:\ARCHIV~1\PICC\drivers\stdlib.h	95;"	p	line:95	signature:(char *s,char *endptr,signed int base)
+strxfrm	C:\ARCHIV~1\PICC\drivers\string.h	177;"	f	line:177	signature:(char *s1, char *s2, size_t n)
+su	C:\ARCHIV~1\PICC\drivers\string.h	202;"	l	line:202
+su1	C:\ARCHIV~1\PICC\drivers\string.h	130;"	l	line:130
+su2	C:\ARCHIV~1\PICC\drivers\string.h	130;"	l	line:130
+system	C:\ARCHIV~1\PICC\drivers\stdlib.h	146;"	p	line:146	signature:(char *string)
+system	C:\ARCHIV~1\PICC\drivers\stdlib.h	757;"	f	line:757	signature:(char *string)
+t	C:\ARCHIV~1\PICC\drivers\math.h	375;"	l	line:375
+t	C:\ARCHIV~1\PICC\drivers\stdlib.h	817;"	l	line:817
+t	C:\ARCHIV~1\PICC\drivers\string.h	291;"	l	line:291
+t2	C:\ARCHIV~1\PICC\drivers\math.h	375;"	l	line:375
+t_espera	C:\personal\Miguel Angel\archivos globo\estacion\estacion_globo\estacion_globo.c	674;"	l	line:674
+t_respuesta	C:\personal\Miguel Angel\archivos globo\estacion\estacion_globo\estacion_globo.c	488;"	l	line:488
+tan	C:\ARCHIV~1\PICC\drivers\math.h	429;"	f	line:429	signature:(float x)
+tanh	C:\ARCHIV~1\PICC\drivers\math.h	686;"	f	line:686	signature:(float x)
+temp	C:\ARCHIV~1\PICC\drivers\stdlib.h	545;"	l	line:545
+temp_acumulada	C:\personal\Miguel Angel\archivos globo\estacion\estacion_globo\estacion_globo.c	68;"	v	line:68
+temp_en_c	C:\personal\Miguel Angel\archivos globo\estacion\estacion_globo\estacion_globo.c	62;"	v	line:62
+temp_enviar	C:\personal\Miguel Angel\archivos globo\estacion\estacion_globo\estacion_globo.c	71;"	v	line:71
+temperatura	C:\personal\Miguel Angel\archivos globo\estacion\estacion_globo\estacion_globo.c	61;"	v	line:61
+tempo	C:\personal\Miguel Angel\archivos globo\estacion\estacion_globo\estacion_globo.c	521;"	l	line:521
+tempo	C:\personal\Miguel Angel\archivos globo\estacion\estacion_globo\estacion_globo.c	572;"	l	line:572
+tempo1	C:\personal\Miguel Angel\archivos globo\estacion\estacion_globo\estacion_globo.c	520;"	l	line:520
+tempo1	C:\personal\Miguel Angel\archivos globo\estacion\estacion_globo\estacion_globo.c	571;"	l	line:571
+tiempo	C:\personal\Miguel Angel\archivos globo\estacion\estacion_globo\estacion_globo.c	488;"	l	line:488
+uc	C:\ARCHIV~1\PICC\drivers\string.h	201;"	l	line:201
+val	C:\ARCHIV~1\PICC\drivers\stdlib.h	217;"	l	line:217
+val	C:\ARCHIV~1\PICC\drivers\stdlib.h	225;"	l	line:225
+val	C:\ARCHIV~1\PICC\drivers\stdlib.h	847;"	l	line:847
+valor	C:\personal\Miguel Angel\archivos globo\estacion\estacion_globo\estacion_globo.c	544;"	l	line:544
+vel_acumulada	C:\personal\Miguel Angel\archivos globo\estacion\estacion_globo\estacion_globo.c	68;"	v	line:68
+vel_enviar	C:\personal\Miguel Angel\archivos globo\estacion\estacion_globo\estacion_globo.c	71;"	v	line:71
+velocidad	C:\personal\Miguel Angel\archivos globo\estacion\estacion_globo\estacion_globo.c	66;"	v	line:66
+wchar_t::char	C:\ARCHIV~1\PICC\drivers\stddef.h	22;"	d	line:22
+wcstombs	C:\ARCHIV~1\PICC\drivers\stdlib.h	785;"	f	line:785	signature:(char *s,wchar_t *pwcs,size_t n)
+wctomb	C:\ARCHIV~1\PICC\drivers\stdlib.h	773;"	f	line:773	signature:(char *s,wchar_t wchar)
+x	C:\ARCHIV~1\PICC\drivers\stdlib.h	637;"	l	line:637
+x	C:\ARCHIV~1\PICC\drivers\stdlib.h	702;"	l	line:702
+y	C:\ARCHIV~1\PICC\drivers\math.h	156;"	l	line:156
+y	C:\ARCHIV~1\PICC\drivers\math.h	208;"	l	line:208
+y	C:\ARCHIV~1\PICC\drivers\math.h	330;"	l	line:330
+y	C:\ARCHIV~1\PICC\drivers\math.h	36;"	l	line:36
+y	C:\ARCHIV~1\PICC\drivers\math.h	375;"	l	line:375
+y	C:\ARCHIV~1\PICC\drivers\math.h	448;"	l	line:448
+y	C:\ARCHIV~1\PICC\drivers\math.h	532;"	l	line:532
+y2	C:\ARCHIV~1\PICC\drivers\math.h	208;"	l	line:208
+y2	C:\ARCHIV~1\PICC\drivers\math.h	448;"	l	line:448
+z	C:\ARCHIV~1\PICC\drivers\math.h	582;"	l	line:582
