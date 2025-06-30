@@ -1,2 +1,0 @@
-fecha hora Temperatura Humedad Presión Dirección Velocidad Altura
-
