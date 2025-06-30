@@ -1,3 +1,0 @@
-wine ccsc +EW  -L -M -J +PE +FH +STDOUT I="c:\Program Files\PICC\Devices;c:\Program Files\PICC\Drivers" estacion_globo.c
-
-./usburn -w -S28 -F18 -H /media/KINGSTON/sonda/estacion_globo/estacion_globo.hex        
