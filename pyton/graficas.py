@@ -1,0 +1,253 @@
+"""Libreria para realizar graficas"""
+from tkinter import *
+import math
+class grafica:
+    def __init__(self,marco,
+            #posicion,
+            #xm,ym,xb,yb
+            escala_x=[0,500,100],
+            escala_y=[0,500,100],
+            tam=[500,500],
+            color='black',
+            #titulo,posición
+            eje_x=['',1,1,1],
+            eje_y=['',-1,1,1],
+            ejes_izq=1,
+            ejes_der=1,
+            ejes_up=1,
+            ejes_down=1,
+            #nombre,
+            ):
+        #contenedor tipo canvas
+        self.marco=marco
+        #colores
+        self.color=color
+        #nombres de ejes
+        self.ejex_name=eje_x[0]
+        self.ejey_name=eje_y[0]
+        #espacio para ejes
+        self.espacio_eje_x=50
+        self.espacio_eje_y=70
+        self.ejes_izq=ejes_izq
+        self.ejes_der=ejes_der
+        self.ejes_up=ejes_up
+        self.ejes_down=ejes_down
+        self.offset_izq=self.espacio_eje_y*ejes_izq
+        self.offset_der=self.espacio_eje_y*ejes_der
+        self.offset_up=self.espacio_eje_x*ejes_up
+        self.offset_down=self.espacio_eje_x*ejes_down
+
+        #escala
+        #m=px/u
+        self.x_min=escala_x[0]
+        self.x_max=escala_x[1]
+        self.y_min=escala_y[0]
+        self.y_max=escala_y[1]
+        self.escala_x_paso=escala_x[2]
+        self.escala_y_paso=escala_y[2]
+        self.escala_xm=tam[1]/(escala_x[1]-escala_x[0])
+        self.escala_ym=tam[0]/(escala_y[1]-escala_y[0])
+        self.escala_xb=escala_x[0]*self.escala_xm
+        self.escala_yb=escala_y[0]*self.escala_ym
+        #tamaño total de la ventana
+        self.width=tam[1]+self.offset_izq+self.offset_der
+        self.height=tam[0]+self.offset_up+self.offset_down
+        self.marco.config(width=self.width)
+        self.marco.config(height=self.height)
+        #dibuja ejes
+        if eje_x[1]!=None:
+            self.crea_eje_x(eje_x[1])
+        if eje_y[1]!=None:
+            self.crea_eje_y(eje_y[1])
+        return None
+    
+    def v_limites(self,x,y):
+        '''
+        verifica que las coordenadas se encuentren dentro de los límites de dibujo
+        '''
+        if x>=self.x_min and x<=self.x_max and y>=self.y_min and y<=self.y_max:
+            return True
+        else:
+            return False
+            
+    def cambia_coor(self,x,y):
+        #ajustando por escala
+        x=x*self.escala_xm-self.escala_xb
+        y=y*self.escala_ym-self.escala_yb
+        #invirtiendo Y y recorriendo por ejes
+        y=self.height-y-self.offset_down
+        x=x+self.offset_izq
+        return x,y
+    def cambia_coor_x(self,x):
+        x=x*self.escala_xm-self.escala_xb
+        x=x+self.offset_izq
+        return x
+    
+    def cambia_coor_y(self,y):
+        y=y*self.escala_ym-self.escala_yb
+        y=self.height-y-self.offset_down
+        return y
+
+    def punto(self,x,y,tipo='.'):
+        '''coloca un punto en la grafica'''
+        if self.v_limites(x,y):
+            x=self.cambia_coor_x(x)
+            y=self.cambia_coor_y(y)
+            if tipo=='.':
+                self.marco.create_oval(x,y,
+                    x+1,y+1,
+                    outline=self.color,
+                    )
+            elif tipo=='+':
+                self.marco.create_line(x-3,y,
+                    x+3,y,
+                    fill=self.color,
+                    )
+                self.marco.create_line(x,y-3,
+                    x,y+3,
+                    fill=self.color,
+                    )
+            elif tipo=='o':
+                self.marco.create_oval(x-2,y-2,
+                    x+2,y+2,
+                    outline=self.color,
+                    )
+            
+    def linea(self,x1,y1,x2,y2):
+
+        if self.v_limites(x1,y1)or self.v_limites(x2,y2):
+            x1=self.cambia_coor_x(x1)
+            y1=self.cambia_coor_y(y1)
+            x2=self.cambia_coor_x(x2)
+            y2=self.cambia_coor_y(y2)
+            l=self.marco.create_line(x1,y1,x2,y2,
+                fill=self.color,
+                tags='linea',
+                )
+            
+    def crea_eje_x(self,lugar):
+        '''
+        Dibuja un eje
+        '''
+        if lugar>0:
+            y_c=(lugar-1)*self.espacio_eje_x+\
+                self.cambia_coor_y(self.y_min)
+            self.marco.create_line(
+                self.offset_izq,
+                y_c,
+                self.cambia_coor_x(self.x_max),
+                y_c,
+                fill=self.color,
+                )
+            for x in range(self.x_min, self.x_max+1, self.escala_x_paso):
+                x_c=self.cambia_coor_x(x)
+                self.marco.create_line(
+                    x_c,y_c,
+                    x_c,y_c+10,
+                    fill=self.color,
+                    )
+                self.marco.create_text(x_c,y_c+20,
+                        text=x,
+                        fill=self.color,
+                        )
+            x_c=self.cambia_coor_x((self.x_max+self.x_min)/2)
+            self.marco.create_text(x_c,y_c+35,
+                text=self.ejex_name,
+                fill=self.color,
+                )
+
+        elif lugar<0:
+            y_c=(abs(lugar)-1)*self.espacio_eje_x
+            self.marco.create_line(
+                self.cambia_coor_x(self.x_min),
+                y_c,
+                self.cambia_coor_x(self.x_max),
+                y_c,
+                fill=self.color,
+                )
+            for x in range(self.x_min, self.x_max+1, self.escala_x_paso):
+                x_c=self.cambia_coor_x(x)
+                self.marco.create_line(
+                    x_c,y_c,
+                    x_c,y_c+-10,
+                    fill=self.color,
+                    )
+                self.marco.create_text(x_c,y_c-20,
+                        text=x,
+                        fill=self.color,
+                        )
+            x_c=self.cambia_coor_x((self.x_max+self.x_min)/2)
+            self.marco.create_text(x_c,y_c-35,
+                text=self.ejex_name,
+                fill=self.color,
+                )
+
+
+    def crea_eje_y(self,lugar):
+        if lugar<0:
+            x_c=self.cambia_coor_x(self.x_min)-(abs(lugar)-1)*self.espacio_eje_y
+            self.marco.create_line(
+                x_c,
+                self.cambia_coor_y(self.y_min),
+                x_c,
+                self.cambia_coor_y(self.y_max),
+                fill=self.color,
+                )
+            for y in range(self.y_min, self.y_max+1, self.escala_y_paso):
+                y_c=self.cambia_coor_y(y)
+                self.marco.create_line(
+                    x_c,y_c,
+                    x_c-10,y_c,
+                    fill=self.color,
+                    )
+                self.marco.create_text(x_c-30,y_c,
+                        text=y,
+                        fill=self.color,
+                        )
+            y_c=self.cambia_coor_y(self.y_max)
+            self.marco.create_text(x_c,y_c-20,
+                text=self.ejey_name,
+                fill=self.color,
+                )
+
+        elif lugar>0:
+            x_c=self.cambia_coor_x(self.x_max)+ (lugar-1)*self.espacio_eje_y
+            self.marco.create_line(
+                x_c,
+                self.cambia_coor_y(self.y_min),
+                x_c,
+                self.cambia_coor_y(self.y_max),
+                fill=self.color,
+                )
+            for y in range(self.y_min, self.y_max+1, self.escala_y_paso):
+                y_c=self.cambia_coor_y(y)
+                self.marco.create_line(
+                    x_c,y_c,
+                    x_c+10,y_c,
+                    fill=self.color,
+                    )
+                self.marco.create_text(x_c+30,y_c,
+                        text=y,
+                        fill=self.color,
+                        )
+            y_c=self.cambia_coor_y(self.y_max)
+            self.marco.create_text(x_c,y_c-20,
+                text=self.ejey_name,
+                fill=self.color,
+                )
+
+
+if __name__ == "__main__":
+    root=Tk()
+    marco=Canvas(root)
+    marco.grid()
+    graf=grafica(marco,
+        escala_x=[-10,40,10],
+        escala_y=[0,2000,100],
+        color='blue',
+        eje_x=['nombre eje x',-2],
+        eje_y=['nombre eje y',2],
+        )
+    graf.punto(20,100.5)
+    graf.punto(50,250)
+    root.mainloop()
