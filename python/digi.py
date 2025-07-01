@@ -5,25 +5,34 @@ import serial
 import time
 import platform
 import glob
+import serial.tools.list_ports # Import the list_ports module
+
 class digiError(Exception):
     pass
+
 class noAns(digiError):
     '''error cuando el módulo digi no responde'''
+    pass
+
 class digi(serial.Serial):
     def __init__(self,*args,**kw):
         serial.Serial.__init__(self,*args,**kw)
+
     def write(self,objw):
         '''amplia write para aceptar cadenas'''
         if isinstance(objw,str):
             objw=objw.encode('latin1')
         return serial.Serial.write(self,objw)
+
     def read(self,size=1):
         '''amplia read para regresar cadenas'''
         ans=serial.Serial.read(self,size)
         return ans.decode('latin1')
+
     def readbytes(self,size=1):
         '''read original'''
         return serial.Serial.read( self,size)
+
     def modoComando(self):
         '''ingresa al modo comando del Xbee'''
         #devuelve True si se ha ingresado correctamente
@@ -39,6 +48,7 @@ class digi(serial.Serial):
             if self.read(3)!='OK\r':
                 raise noAns('El módulo DIGI no responde')
         return True
+
     def setModoC(self,modo):
         '''cambia el tiempo de guarda para comandos AT'''
         #modo='fast' GT=18
@@ -55,6 +65,7 @@ class digi(serial.Serial):
         self.enviaAT('WR')
         self.enviaAT('CN')
         return True
+
     def enviaAT(self,*cmds):
         '''envia los comandos AT especificados'''
         #regresa la respuesta del módulo
@@ -76,6 +87,7 @@ class digi(serial.Serial):
                 raise ValueError('El comando respondió con un error')
             ansL.append(ans)
         return ansL
+
     def cambiarDir(self,canal,wr=False):
         '''cambia el módulo Xbee al canal proporcionado,
         regresa True en un cambio exitoso'''
@@ -86,42 +98,47 @@ class digi(serial.Serial):
         else:
             self.enviaAT('DL'+canal,'MY'+canal,'CN')
         return True
+
     def scanNomPtos(self):
         """revisa por los puertos disponibles.
-        Regresa una lista(nombre)"""
+        Regresa una lista de nombres (strings)."""
         puertos = []
-        for i in range(100):
+        # Use serial.tools.list_ports.comports() for a robust and cross-platform scan
+        for port_info in serial.tools.list_ports.comports():
             try:
-                s = serial.Serial(i)
-                puertos.append( s.portstr)
-                s.close()   
-            except serial.SerialException:
+                # port_info.device gives the port name as a string (e.g., 'COM1', '/dev/ttyUSB0')
+                s = serial.Serial(port_info.device)
+                puertos.append(s.portstr) # s.portstr is already a string
+                s.close()
+            except (serial.SerialException, OSError): # Catch specific exceptions
                 pass
-        if platform.system()=='Linux':
-            usbS=glob.glob('/dev/ttyUSB*')
-            for nombre in usbS:
-                try:
-                    s=serial.Serial(nombre)
-                    puertos.append(s.portstr)
-                    s.close()
-                except serial.SerialException:
-                    pass
         return puertos
+
     def hayDigi(self,ptos):
         '''Detecta si hay algún DIGI en la lista de puertos'''
+        found_digi_port = None # Initialize to None
         for pto in ptos:
-            odigi=digi(pto,timeout=0.3)
-            
+            # Ensure pto is a string for serial.Serial
+            if not isinstance(pto, str):
+                pto = str(pto) # Convert to string if it somehow isn't already
+
+            odigi = None # Initialize odigi for each iteration
             try:
+                odigi=digi(pto,timeout=0.3)
                 odigi.modoComando()
                 odigi.enviaAT('CN')
-                odigi.close()
-                return pto
-            except:
+                found_digi_port = pto # Found a DIGI, store the port name
+                break # Exit loop once found
+            except (serial.SerialException, noAns, digiError, ValueError, OSError):
+                # Catch specific exceptions that might occur during communication
                 pass
-        if ptos!=[]:
-            odigi.close()
-        return None
+            finally:
+                if odigi and odigi.is_open:
+                    odigi.close() # Ensure port is closed even if an error occurs
+
+        return found_digi_port # Return the found port or None
+
+
 if __name__ == '__main__':
     def decName(f):
         def ret(*arg):
@@ -132,6 +149,7 @@ if __name__ == '__main__':
             print('\nRespuesta:',a)
             return a
         return ret
+
     odigi=digi()
     #decorando envio de comandos AT
     odigi.enviaAT=decName(odigi.enviaAT)
@@ -145,12 +163,17 @@ if __name__ == '__main__':
         print('DIGI encontrado en:',npto)
     else:
         print('DIGI no encontrado')
-    odigi.open()
-    odigi.modoComando()
-    #odigi.enviaAT()
-    odigi.enviaAT('VR','HV','DB','MY','DL','CN')
-    
-    #odigi.setModoC('normal')
-#    except noAns as e:
-#        print('ocurrio',e)
-    odigi.close()
+
+    # Only attempt to open if a port was found
+    if odigi.port:
+        try:
+            odigi.open()
+            odigi.modoComando()
+            #odigi.enviaAT()
+            odigi.enviaAT('VR','HV','DB','MY','DL','CN')
+        except (serial.SerialException, noAns, digiError, ValueError, OSError) as e:
+            print(f'An error occurred during DIGI communication: {e}')
+        finally:
+            if odigi.is_open:
+                odigi.close()
+    print('Fin de la ejecución de prueba.')
