@@ -102,8 +102,8 @@ class digi(serial.Serial):
     def scanNomPtos(self):
         """revisa por los puertos disponibles.
         Regresa una lista de nombres (strings)."""
-        puertos = []
-        # Use serial.tools.list_ports.comports() for a robust and cross-platform scan
+        puertos = glob.glob('/dev/ttyS*')
+        """# Use serial.tools.list_ports.comports() for a robust and cross-platform scan
         for port_info in serial.tools.list_ports.comports():
             try:
                 # port_info.device gives the port name as a string (e.g., 'COM1', '/dev/ttyUSB0')
@@ -111,7 +111,7 @@ class digi(serial.Serial):
                 puertos.append(s.portstr) # s.portstr is already a string
                 s.close()
             except (serial.SerialException, OSError): # Catch specific exceptions
-                pass
+                pass"""
         return puertos
 
     def hayDigi(self,ptos):

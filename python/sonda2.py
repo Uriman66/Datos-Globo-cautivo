@@ -114,6 +114,8 @@ def paso_ptos(osonda,contenedor):
             btnActualizar.config(state=NORMAL)
         else:
             lblTexto.config(text='Receptor no encontrado')
+            btnAceptar.config(state=NORMAL)
+            btnActualizar.config(state=NORMAL)
         
     return 0
 
