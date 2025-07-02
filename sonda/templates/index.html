@@ -1,0 +1,121 @@
+
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <title>Instrumentación Meteorológica</title>
+  <link rel="stylesheet" href="{{ url_for('static', filename='css/styles.css')}}">
+</head>
+<body>
+  <div id="app">
+    <!-- Vista 1: Portada -->
+    <div id="view-portada" class="view active">
+      <h1>Instrumentación Meteorológica</h1>
+      <p>Conecte el receptor,<br>encienda la sonda,<br>y presione aceptar</p>
+      <button onclick="irAPuertos()">Aceptar</button>
+    </div>
+
+    <!-- Vista 2: Selección de puertos -->
+    <div id="view-puertos" class="view">
+      <h2>Ingrese el puerto</h2>
+      <p id="mensaje-puertos">Por favor, ingrese el nombre del puerto.</p>
+      <input type="text" id="input-puerto" class="entrada" placeholder="/dev/ttyS9" />
+      <div class="acciones">
+        <button onclick="aceptarPuerto()">Aceptar</button>
+      </div>
+    </div>
+
+  <!-- Vista 3: Dirección de la sonda -->
+    <div id="view-sonda" class="view">
+    <h2>Configurar Sonda</h2>
+    <p>Puerto seleccionado: <span id="puerto-actual"></span></p>
+
+    <label for="direccion-sonda">Dirección de la sonda:</label>
+    <input type="text" id="direccion-sonda" placeholder="Ej. 1" />
+
+    <div class="acciones">
+        <button onclick="cambiarPuerto()">Cambiar puerto</button>
+        <button onclick="direccionAuto()">Auto</button>
+        <button onclick="aceptarDireccion()">Aceptar</button>
+    </div>
+    </div>
+
+        <!-- Vista 4: Menú principal de acciones -->
+    <div id="view-menu" class="view">
+    <h2>Menú Principal</h2>
+    <p>Puerto: <span id="menu-puerto"></span></p>
+    <p>Sonda: <span id="menu-sonda"></span></p>
+    <button onclick="cambiarSonda()">Cambiar</button>
+
+    <div class="acciones">
+        <button onclick="configurarSonda()">Configura<br>Sonda</button>
+        <button onclick="datosTiempoReal()">Datos en<br>Tiempo Real</button>
+        <button onclick="recolectarDatos()">Recolectar<br>Datos</button>
+    </div>
+    </div>
+
+    <!-- Vista 5: Configuración de la sonda -->
+    <div id="view-configuracion" class="view">
+    <h2>Configuración de la Sonda</h2>
+
+    <fieldset>
+        <legend>Información de la sonda</legend>
+        <p>Puerto: <span id="conf-puerto"></span></p>
+        <p>Dirección: <span id="conf-sonda"></span></p>
+    </fieldset>
+
+    <fieldset>
+        <legend>Configuración de hora</legend>
+        <label>
+        <input type="radio" name="hora" value="pc" checked>
+        Sincronizar con la PC
+        </label><br>
+        <label>
+        <input type="radio" name="hora" value="manual">
+        Personalizado (no implementado)
+        </label>
+    </fieldset>
+
+    <fieldset>
+        <legend>Configuración de medición</legend>
+        <label>
+        Intervalo de muestreo (s):
+        <input type="number" id="intervalo-muestreo" min="1" max="60" value="10">
+        </label><br>
+        <label>
+        Intervalo de almacenamiento (s):
+        <input type="number" id="intervalo-almacenamiento" min="1" max="60" value="30">
+        </label>
+    </fieldset>
+
+    <div class="acciones">
+        <button onclick="cancelarConfiguracion()">Cancelar</button>
+        <button onclick="aceptarConfiguracion()">Aceptar</button>
+    </div>
+    </div>
+
+    <!-- Vista 6: Obtención de los datos -->
+    <div id="view-data" class="view">
+    <h2>Obtención de los datos</h2>
+    <button onclick="mostrarMenuPrincipal()">Menú</button>
+    <button onclick="">Guardar datos</button>
+    <p>Obteniendo datos...</p>
+      <div id="progress-bar">
+        <progress value="70" max="100"></progress>
+      </div>
+    </div>
+
+
+    <!-- Vista 7: Datos en tiempo real -->
+    <div id="view-real" class="view">
+    <h2>Obteniendo los datos en tiempo real</h2>
+    <button onclick="mostrarMenuPrincipal()">Menú</button>
+    <p>Obteniendo datos en tiempo real...</p>
+      <div id="progress-bar">
+        <progress value="70" max="100"></progress>
+      </div>
+    </div>
+
+  <script src="{{ url_for('static', filename='scripts/app.js')}}"></script>
+</body>
+</html>
