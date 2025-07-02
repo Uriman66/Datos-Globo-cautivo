@@ -1,0 +1,88 @@
+body {
+    font-family: Helvetica, sans-serif;
+    background: #f2f2f2;
+    color: #222;
+    margin: 0;
+    padding: 20px;
+}
+
+.view {
+    display: none;
+    padding: 20px;
+    background: white;
+    border-radius: 8px;
+    box-shadow: 0 0 10px rgba(0,0,0,0.1);
+}
+
+.view.active {
+    display: block;
+}
+
+h1, h2 {
+    margin-top: 0;
+}
+
+button {
+    margin: 10px 5px;
+    padding: 10px 20px;
+    background-color: #007acc;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+button:hover {
+    background-color: #005b99;
+}
+
+select {
+    margin: 10px 0;
+    padding: 8px;
+    font-size: 16px;
+}
+
+input {
+    font-size: 16px;
+    padding: 8px;
+    width: 100px;
+    margin: 10px 0;
+}
+
+fieldset {
+    margin: 15px 0;
+    padding: 10px;
+    border-radius: 5px;
+    border: 1px solid #ccc;
+}
+
+legend {
+    font-weight: bold;
+}
+
+input[type="number"] {
+    width: 60px;
+    margin-left: 10px;
+}
+
+progress {
+    width: 200px;
+    height: 20px;
+    background-color: #ddd;
+    border-radius: 5px;
+}
+
+input[tyep="text"] {
+    background-color: #007acc;
+    padding: 5px;
+}
+
+input[tyep="text"]:focus {
+    border-color: #FFFFFF
+}
+
+.entrada {
+    background-color: #5891DE;
+    padding: 5px;
+    font-family: Helvetica, sans-serif;
+}
