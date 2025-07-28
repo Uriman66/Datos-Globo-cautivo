@@ -1,66 +1,269 @@
-body {
-  font-family: Helvetica, sans-serif;
-  background: #f2f2f2;
-  color: #222;
-  margin: 0;
-  padding: 20px;
+/* ==========================================================================
+   1. Variables de Color y Configuración Global (Modo Claro y Oscuro)
+   ========================================================================== */
+
+:root {
+    /* Paleta Modo Claro */
+    --bg-color: #f4f7f9;
+    --card-bg-color: #ffffff;
+    --text-color: #212529;
+    --text-muted-color: #6c757d;
+    --border-color: #e9ecef;
+    --primary-color: #0d6efd;
+    --primary-hover-color: #0b5ed7;
+    --secondary-color: #6c757d;
+    --secondary-hover-color: #5c636a;
+    --accent-color: #198754; /* Éxito (Verde) */
+    --shadow-color: rgba(0, 0, 0, 0.05);
+    
+    /* Tiempos de transición */
+    --transition-speed: 0.3s;
 }
 
+/* ==========================================================================
+   2. Estilos para el MODO OSCURO
+   ========================================================================== */
+
+@media (prefers-color-scheme: dark) {
+    /* 2.1. Redefinición de Variables para Modo Oscuro */
+    :root {
+        --bg-color: #121212;
+        --card-bg-color: #1e1e1e;
+        --text-color: #e0e0e0;
+        --text-muted-color: #a0a0a0;
+        --border-color: #333;
+        --primary-hover-color: #3b8bfd;
+        --secondary-color: #4a4a4a;
+        --secondary-hover-color: #5a5a5a;
+        --accent-color: #20c997;
+        --shadow-color: rgba(0, 0, 0, 0.2);
+    }
+
+    /* 2.2. Sobrescritura de componentes específicos de Bootstrap */
+    .navbar-dark {
+      background-color: var(--card-bg-color) !important;
+      border-bottom: 1px solid var(--border-color);
+    }
+       
+    .btn-success {
+        background-color: #198754;
+        border-color: #198754;
+        color: #fff;
+    }
+    .btn-success:hover {
+        background-color: #146c43;
+        border-color: #13653f;
+    }
+
+    .btn-info {
+        background-color: #0dcaf0;
+        border-color: #0dcaf0;
+        color: #000;
+    }
+    .btn-info:hover {
+        background-color: #31d2f2;
+        border-color: #25cff2;
+        color: #000;
+    }
+    
+    .btn-outline-secondary {
+        color: var(--text-muted-color);
+        border-color: var(--secondary-color);
+    }
+    .btn-outline-secondary:hover {
+        background-color: var(--secondary-color);
+        color: var(--text-color);
+        border-color: var(--secondary-color);
+    }
+
+    .table {
+        color: var(--text-color);
+        border-color: var(--border-color);
+    }
+    
+    .table-striped > tbody > tr:nth-of-type(odd) > * {
+        --bs-table-accent-bg: rgba(255, 255, 255, 0.05);
+        color: var(--text-color);
+    }
+
+    .table-hover > tbody > tr:hover > * {
+        --bs-table-accent-bg: rgba(255, 255, 255, 0.1);
+        color: var(--text-color);
+    }
+
+    .lead {
+        color: var(--text-muted-color);
+    }
+
+     /* Reglas para Formularios */
+    .form-label, .form-check-label {
+        color: var(--text-color);
+    }
+
+    .form-control::placeholder {
+        color: var(--text-muted-color);
+        opacity: 0.7;
+    }
+
+    /* Compatibilidad con diferentes navegadores para el placeholder */
+    .form-control::-ms-input-placeholder { /* Edge */
+        color: var(--text-muted-color);
+        opacity: 0.7;
+    }
+
+    .form-control:-ms-input-placeholder { /* Internet Explorer 10-11 */
+        color: var(--text-muted-color);
+        opacity: 0.7;
+    }
+
+    /* Reglas para la Tabla */
+    .table {
+        color: var(--text-color);
+        border-color: var(--border-color);
+    }
+    
+    .table-striped > tbody > tr:nth-of-type(odd) > * {
+        --bs-table-accent-bg: rgba(255, 255, 255, 0.05);
+        color: var(--text-color);
+    }
+
+    .table-hover > tbody > tr:hover > * {
+        --bs-table-accent-bg: rgba(255, 255, 255, 0.1);
+        color: var(--text-color);
+    }
+
+    #wind-rose-img {
+    filter: invert(1); /* Invierte todos los colores */
+    }
+
+}
+
+
+/* ==========================================================================
+   3. Estilos Base y Tipografía
+   ========================================================================== */
+
+body {
+    background-color: var(--bg-color);
+    color: var(--text-color);
+    font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Helvetica, Arial, sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol";
+    transition: background-color var(--transition-speed), color var(--transition-speed);
+}
+
+h1, h2, h3, h4, h5, h6 {
+    color: var(--text-color);
+
+}
+
+.card .card-title, .card .card-subtitle {
+    color: var(--text-color) !important;
+}
+
+.text-muted {
+    color: var(--text-muted-color) !important;
+}
+
+.p-3.border.rounded .h3,
+.p-3.border.rounded .h5 {
+    color: var(--text-color);
+}
+
+/* ==========================================================================
+   4. Layout y Componentes Principales (Aplicables a ambos modos)
+   ========================================================================== */
+
+.navbar {
+    transition: background-color var(--transition-speed);
+}
+
+.view.card, .card {
+    background-color: var(--card-bg-color);
+    border: 1px solid var(--border-color);
+    border-radius: 12px;
+    box-shadow: 0 4px 12px var(--shadow-color);
+    transition: all var(--transition-speed) ease;
+}
+
+.view.card:hover, .card:hover {
+    transform: translateY(-3px);
+    box-shadow: 0 8px 20px var(--shadow-color);
+}
+
+.footer {
+    background-color: var(--card-bg-color) !important;
+    border-top: 1px solid var(--border-color) !important;
+    transition: background-color var(--transition-speed), border-top var(--transition-speed);
+}
+
+#wind-rose-img {
+    transition: transform 0.3s ease-in-out;
+}
+
+#wind-rose-img:hover {
+    transform: scale(1.1);
+}
+
+/* ==========================================================================
+   5. Estilo de Vistas y Formularios (Aplicables a ambos modos)
+   ========================================================================== */
+
 .view {
-  display: none;
-  padding: 20px;
-  background: white;
-  border-radius: 8px;
-  box-shadow: 0 0 10px rgba(0,0,0,0.1);
+    display: none;
+    opacity: 0;
+    transition: opacity 0.5s ease-in-out;
 }
 
 .view.active {
-  display: block;
+    display: block;
+    opacity: 1;
 }
 
-h1, h2 {
-  margin-top: 0;
+.btn {
+    border-radius: 8px;
+    font-weight: 500;
+    padding: 0.75rem 1.5rem;
+    transition: all var(--transition-speed) ease;
 }
 
-button {
-  margin: 10px 5px;
-  padding: 10px 20px;
-  background-color: #007acc;
-  color: white;
-  border: none;
-  border-radius: 5px;
-  cursor: pointer;
+.btn-primary {
+    background-color: var(--primary-color);
+    border-color: var(--primary-color);
 }
 
-button:hover {
-  background-color: #005b99;
+.btn-primary:hover {
+    background-color: var(--primary-hover-color);
+    border-color: var(--primary-hover-color);
+    transform: translateY(-2px);
+    box-shadow: 0 4px 10px rgba(13, 110, 253, 0.3);
 }
 
-select {
-  margin: 10px 0;
-  padding: 8px;
-  font-size: 16px;
+.btn-secondary {
+    background-color: var(--secondary-color);
+    border-color: var(--secondary-color);
 }
 
-input {
-  font-size: 16px;
-  padding: 8px;
-  width: 100px;
-  margin: 10px 0;
+.btn-secondary:hover {
+    background-color: var(--secondary-hover-color);
+    border-color: var(--secondary-hover-color);
 }
 
-fieldset {
-  margin: 15px 0;
-  padding: 10px;
-  border-radius: 5px;
-  border: 1px solid #ccc;
+.form-control, .form-check-input {
+    background-color: var(--bg-color);
+    color: var(--text-color);
+    border-color: var(--border-color);
+    border-radius: 8px;
+    padding: 0.75rem;
+    transition: all var(--transition-speed) ease;
 }
 
-legend {
-  font-weight: bold;
+.form-control:focus {
+    background-color: var(--card-bg-color);
+    color: var(--text-color);
+    border-color: var(--primary-color);
+    box-shadow: 0 0 0 0.25rem rgba(13, 110, 253, 0.25);
 }
 
-input[type="number"] {
-  width: 60px;
-  margin-left: 10px;
+.form-check-input:checked {
+    background-color: var(--primary-color);
+    border-color: var(--primary-color);
 }
